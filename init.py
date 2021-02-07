@@ -1,13 +1,14 @@
-#init.py(main substitute)
+#init.py(main substitute), is basically main 
 # always seem to need this
 import sys
  
 # This gets the Qt stuff
 import PyQt5
-from PyQt5 import QtWidgets
-from PyQt5 import QtCore
+from PyQt5 import QtWidgets, QtCore
+from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 from PyQt5.QtCore import pyqtSlot
+
  
 # This is our window from QtCreator
 import mainwindow_auto
@@ -41,6 +42,23 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.btn1.clicked.connect(lambda: self.pressedbtn1())
         self.btn2.clicked.connect(lambda: self.pressedbtn2())
         self.btn3.clicked.connect(lambda: self.pressedbtn3())
+        ## Add toolbar and items
+        
+    def pressedInput(self):
+    	print("Input Tab Selected")
+
+    def pressedtest1(self):
+    	print('test1 tab selected')
+
+
+    #toolbox = QToolBox()
+     #   layout.addWidget(toolbox, 0, 0)
+      #  label = QLabel()
+       # toolbox.addItem(label, "Students")
+        #label = QLabel()
+        #toolbox.addItem(label, "Teachers")
+        #label = QLabel()
+        #toolbox.addItem(label, "Directors")
 
  
 # I feel better having one of these
@@ -49,9 +67,11 @@ def main():
  app = QApplication(sys.argv)
  form = MainWindow()
  form.show()
- # without this, the script exits immediately.
+ #without this, the script exits immediately.
  sys.exit(app.exec_())
  
 # python bit to figure how who started This
 if __name__ == "__main__":
  main()
+
+  # without this, the script exits immediately.
