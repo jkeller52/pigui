@@ -6,7 +6,7 @@ import sys
 import PyQt5
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
 from PyQt5.QtCore import pyqtSlot
 
  
