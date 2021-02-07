@@ -6,31 +6,49 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>480</height>
+    <width>480</width>
+    <height>316</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
-    <height>480</height>
+    <width>800800</width>
+    <height>78978</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(24, 40, 124);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QToolBox" name="toolBox">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>60</y>
-      <width>211</width>
-      <height>301</height>
+      <x>230</x>
+      <y>20</y>
+      <width>221</width>
+      <height>221</height>
      </rect>
     </property>
+    <property name="maximumSize">
+     <size>
+      <width>480</width>
+      <height>320</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(15, 84, 244);
+gridline-color: rgb(10, 38, 191);</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -40,8 +58,8 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>211</width>
-       <height>199</height>
+       <width>221</width>
+       <height>101</height>
       </rect>
      </property>
      <attribute name="label">
@@ -50,32 +68,19 @@
      <widget class="QWidget" name="gridLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>181</width>
-        <height>175</height>
+        <x>50</x>
+        <y>0</y>
+        <width>121</width>
+        <height>109</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="1" column="0">
-        <widget class="QPushButton" name="btn2">
-         <property name="font">
-          <font>
-           <family>Arial</family>
-           <pointsize>36</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Btn2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
         <widget class="QPushButton" name="btn1">
          <property name="font">
           <font>
            <family>Arial</family>
-           <pointsize>36</pointsize>
+           <pointsize>24</pointsize>
           </font>
          </property>
          <property name="text">
@@ -84,15 +89,18 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QPushButton" name="btn3">
+        <widget class="QPushButton" name="btn2">
          <property name="font">
           <font>
            <family>Arial</family>
-           <pointsize>36</pointsize>
+           <pointsize>24</pointsize>
           </font>
          </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
-          <string>Btn3</string>
+          <string>Btn2</string>
          </property>
         </widget>
        </item>
@@ -104,8 +112,8 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>211</width>
-       <height>199</height>
+       <width>221</width>
+       <height>101</height>
       </rect>
      </property>
      <attribute name="label">
@@ -114,19 +122,19 @@
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>0</y>
-        <width>201</width>
-        <height>231</height>
+        <width>181</width>
+        <height>87</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_5">
-       <item row="4" column="0">
+       <item row="2" column="0">
         <widget class="QToolButton" name="btnOff">
          <property name="font">
           <font>
            <family>Arial</family>
-           <pointsize>36</pointsize>
+           <pointsize>24</pointsize>
           </font>
          </property>
          <property name="text">
@@ -134,31 +142,16 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
+       <item row="0" column="0" rowspan="2">
         <widget class="QPushButton" name="btnOn">
          <property name="font">
           <font>
            <family>Arial</family>
-           <pointsize>36</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>ON</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
            <pointsize>24</pointsize>
           </font>
          </property>
          <property name="text">
-          <string>dong</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::RichText</enum>
+          <string>ON</string>
          </property>
         </widget>
        </item>
@@ -169,6 +162,38 @@
      <attribute name="label">
       <string>Nav</string>
      </attribute>
+     <widget class="QPushButton" name="btn3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Btn3</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -177,7 +202,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>480</width>
      <height>22</height>
     </rect>
    </property>
