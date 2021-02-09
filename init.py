@@ -31,7 +31,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtn1(self):
         print ("Button1")
-        subprocess.run(["ssh jacobkeller@jacobs-mbp.wowway.com python -u - < hdmi1.py"])
+        #subprocess.run(["ssh jacobkeller@jacobs-mbp.wowway.com python -u - < hdmi1.py"])
 
     def pressedbtn2(self):
         print ("Button2")
