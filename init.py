@@ -8,10 +8,6 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
 from PyQt5.QtCore import pyqtSlot
-#Begin adding Functions from MBP
-from hdmi1 import hdmi1
-from dp1 import dp1
-#paramiko enables ssh connection
 
  
 # This is our window from QtCreator
