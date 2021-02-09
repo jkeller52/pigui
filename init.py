@@ -9,9 +9,19 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
 from PyQt5.QtCore import pyqtSlot
 
- 
 # This is our window from QtCreator
 import mainwindow_auto
+
+#now, how do I execute ssh commands...
+import paramiko
+
+hostname = "@jacobs-mbp.wowway.com"
+username = "jacobkeller"
+password = "1943"
+#now what...
+
+
+
  
 # create class for our Raspberry Pi GUI
 class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
