@@ -75,3 +75,11 @@ if __name__ == "__main__":
  main()
 
   # without this, the script exits immediately.
+
+
+
+  #error when running on raspberry pi: 
+  #qt.qpa.screen: QXcbConnection: Could not connect to display :0.0
+  #Could not connect to any X display.
+
+  #solution: https://www.itsolutionstuff.com/post/solved-qxcbconnection-could-not-connect-to-display-wkhtmltopdf-ubuntuexample.html
