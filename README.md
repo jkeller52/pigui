@@ -8,7 +8,7 @@ https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
-then:
+Now, updgrade python setuptools and make sure pip recognizes pyqt5. 
 pip3 install --upgrade setuptools
 pip3 install pyqt5
 
