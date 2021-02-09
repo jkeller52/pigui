@@ -1,13 +1,34 @@
 #init.py(main substitute), is basically main 
 # always seem to need this
 import sys
- 
+import os
 # This gets the Qt stuff
 import PyQt5
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
 from PyQt5.QtCore import pyqtSlot
+#Begin adding Functions from MBP
+from hdmi1 import hdmi1
+from dp1 import dp1
+#paramiko enables ssh connection
+from paramiko import SSHClient
+
+# Connect
+client = SSHClient()
+client.load_system_host_keys()
+client.connect('jacobkeller@mbp.wowway.com”', username='jacobkeller', password='1943')
+
+# Run a command (execute PHP interpreter)
+stdin, stdout, stderr = client.exec_command(hdmi1())
+
+# Because they are file objects, they need to be closed
+stdin.close()
+stdout.close()
+stderr.close()
+
+# Close the client itself
+client.close()
 
  
 # This is our window from QtCreator
@@ -26,6 +47,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtn1(self):
         print ("Button1")
+        os.system('pyinfra inventory.py deploy.py')
 
     def pressedbtn2(self):
         print ("Button2")
