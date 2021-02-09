@@ -12,7 +12,6 @@ from PyQt5.QtCore import pyqtSlot
 from hdmi1 import hdmi1
 from dp1 import dp1
 #paramiko enables ssh connection
-from paramiko import SSHClient
 
  
 # This is our window from QtCreator
