@@ -1,19 +1,17 @@
 #init.py(main substitute), is basically main 
+
 import sys
 import os
 import subprocess #for calling bas scripts
-# This gets the Qt stuff for the GUI
-import PyQt5
+import PyQt5 # This gets the Qt stuff for the GUI
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
 from PyQt5.QtCore import pyqtSlot
-
-# This is our window from QtCreator
-import mainwindow_auto
+import mainwindow_auto    # This is our window from QtCreator
 
 
-#subprocess.call("hdmi.sh")
+
 
 
  
@@ -29,8 +27,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("Pressed Off!")
 
     def pressedbtn1(self):
-        print ("Button1")
-        subprocess.call("btn1.sh")
+        #print ("Button1")
+        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/btn1.sh")
 
     def pressedbtn2(self):
         print ("Button2")
