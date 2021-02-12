@@ -1,1 +1,1 @@
-ssh -T jacobkeller@mbp.wowway.com < ./Users/jacobkeller/Documents/GitHub/pigui/ddcctl.sh
+ssh -T jacobkeller@mbp.wowway.com './Users/jacobkeller/Documents/GitHub/pigui/ddcctl.sh'
