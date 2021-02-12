@@ -272,7 +272,7 @@ border-color: rgb(0, 0, 0);</string>
         <x>10</x>
         <y>30</y>
         <width>291</width>
-        <height>291</height>
+        <height>271</height>
        </rect>
       </property>
       <property name="font">
@@ -289,7 +289,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>211</height>
+         <height>191</height>
         </rect>
        </property>
        <attribute name="label">
