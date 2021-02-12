@@ -28,11 +28,11 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtn1(self):
         print ("Button1")
-        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/btn1.sh")
+        subprocess.call("/home/pi/pigui/btn1.sh")
 
     def pressedbtn2(self):
         print ("Button2")
-        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/btn2.sh")
+        subprocess.call("/home/pi/pigui/btn2.sh")
 
     def pressedbtn3(self):
         print ("Button3")
