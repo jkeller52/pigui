@@ -10,10 +10,6 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidg
 from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
 
-
-
-
-
  
 # create class for our Raspberry Pi GUI
 class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
