@@ -79,14 +79,14 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         subprocess.call("/home/pi/pigui/Mute.sh")
         #applescript/bash to change input to set audio volume to 0% 
 
-    def pressedpushButtonVolDown(self):
+    def pressedVolDown(self):
         #print ("pushButtonVolDown pressed")
         subprocess.call("/home/pi/pigui/VolDown.sh")
         #applescript/bash to change input to decrease audio volume
 
-    def pressedpushButtonVolUp(self):
+    def pressedVolUp(self):
         #print ("pushButtonVolUp pressed")
-        subprocess.call("/home/pi/pigui/pushButtonVolUp.sh")
+        subprocess.call("/home/pi/pigui/VolUp.sh")
         #applescript/bash to change input to increase audio volume
 
 
