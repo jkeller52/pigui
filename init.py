@@ -89,7 +89,6 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         subprocess.call("/home/pi/pigui/VolUp.sh")
         #applescript/bash to change input to increase audio volume
 
-
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
