@@ -68,9 +68,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>20</y>
+        <y>0</y>
         <width>311</width>
-        <height>331</height>
+        <height>301</height>
        </rect>
       </property>
       <property name="font">
@@ -87,7 +87,7 @@
          <x>0</x>
          <y>0</y>
          <width>311</width>
-         <height>251</height>
+         <height>221</height>
         </rect>
        </property>
        <attribute name="label">
@@ -199,7 +199,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>311</width>
-         <height>251</height>
+         <height>221</height>
         </rect>
        </property>
        <attribute name="label">
@@ -270,7 +270,7 @@ border-color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
+        <y>0</y>
         <width>291</width>
         <height>271</height>
        </rect>
@@ -281,7 +281,7 @@ border-color: rgb(0, 0, 0);</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="video">
        <property name="geometry">
@@ -289,7 +289,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>191</height>
+         <height>151</height>
         </rect>
        </property>
        <attribute name="label">
@@ -352,7 +352,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>211</height>
+         <height>191</height>
         </rect>
        </property>
        <attribute name="label">
@@ -458,7 +458,7 @@ border-color: rgb(0, 0, 0);</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Jacob">
        <property name="geometry">
