@@ -30,7 +30,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtn1(self):
         print ("Button1")
-        subprocess.call("hdmi.sh")
+        subprocess.call("btn1.sh")
 
     def pressedbtn2(self):
         print ("Button2")
