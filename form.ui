@@ -7,36 +7,34 @@
     <x>0</x>
     <y>0</y>
     <width>320</width>
-    <height>480</height>
+    <height>460</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
     <width>320</width>
-    <height>480</height>
+    <height>460</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-top-color: rgb(26, 17, 9);
-border-top-color: rgb(4, 51, 255);
-gridline-color: rgba(36, 33, 139, 245);</string>
+   <string notr="true">background-color: rgb(0, 33, 172);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>50</y>
-      <width>291</width>
-      <height>391</height>
+      <y>40</y>
+      <width>281</width>
+      <height>401</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>24</pointsize>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -48,22 +46,22 @@ alternate-background-color: rgb(62, 144, 235);
     <property name="currentIndex">
      <number>1</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="MusicTab">
      <attribute name="title">
-      <string>On/Off</string>
+      <string>Music</string>
      </attribute>
-     <widget class="QWidget" name="horizontalLayoutWidget">
+     <widget class="QWidget" name="verticalLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>10</y>
-        <width>212</width>
-        <height>80</height>
+        <x>0</x>
+        <y>250</y>
+        <width>162</width>
+        <height>116</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="Playpause">
        <item>
-        <widget class="QPushButton" name="btnOn">
+        <widget class="QPushButton" name="btnOnplay">
          <property name="font">
           <font>
            <family>Arial</family>
@@ -74,12 +72,12 @@ alternate-background-color: rgb(62, 144, 235);
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>ON</string>
+          <string>PLAY</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btnOff">
+        <widget class="QPushButton" name="btnOffpause">
          <property name="font">
           <font>
            <family>Arial</family>
@@ -90,29 +88,106 @@ alternate-background-color: rgb(62, 144, 235);
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>OFF</string>
+          <string>PAUSE</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="japangif">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>154</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>154</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Downloads/gif animations/601d08ef97647985814841.gif</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Inputs</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>281</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btn1">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>80</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(4, 1, 1);</string>
+         </property>
+         <property name="text">
+          <string>DP</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn2">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>80</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(9, 5, 3);</string>
+         </property>
+         <property name="text">
+          <string>HDMI</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="Texting">
      <attribute name="title">
-      <string>Btns</string>
+      <string>Texts</string>
      </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget">
+     <widget class="QWidget" name="verticalLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>160</width>
-        <height>175</height>
+        <x>0</x>
+        <y>10</y>
+        <width>281</width>
+        <height>331</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QPushButton" name="btn1">
+        <widget class="QPushButton" name="text1">
          <property name="font">
           <font>
            <family>Arial</family>
@@ -123,12 +198,12 @@ alternate-background-color: rgb(62, 144, 235);
           <string notr="true">color: rgb(4, 1, 1);</string>
          </property>
          <property name="text">
-          <string>Btn1</string>
+          <string>Otw now</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn2">
+        <widget class="QPushButton" name="text2">
          <property name="font">
           <font>
            <family>Arial</family>
@@ -139,12 +214,12 @@ alternate-background-color: rgb(62, 144, 235);
           <string notr="true">color: rgb(9, 5, 3);</string>
          </property>
          <property name="text">
-          <string>Btn2</string>
+          <string>I'll call you back</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn3">
+        <widget class="QPushButton" name="text3">
          <property name="font">
           <font>
            <family>Arial</family>
@@ -155,49 +230,27 @@ alternate-background-color: rgb(62, 144, 235);
           <string notr="true">color:rgb(8, 6, 3)</string>
          </property>
          <property name="text">
-          <string>Btn3</string>
+          <string>One sec</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
     </widget>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>piGUI v0.3</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>10</y>
-      <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Page 1</string>
-    </property>
+    <widget class="QWidget" name="Shortcuts">
+     <attribute name="title">
+      <string>Shortcuts</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

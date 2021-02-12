@@ -22,26 +22,41 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     def pressedOffButton(self):
         print ("Pressed Off!")
 
-    def pressedbtn1(self):
-        print ("Button1")
+    def pressedDP(self):
+        print ("DP")
         subprocess.call("/home/pi/pigui/btn1.sh")
 
-    def pressedbtn2(self):
-        print ("Button2")
+    def pressedHDMI(self):
+        print ("HDMI")
         subprocess.call("/home/pi/pigui/btn2.sh")
 
-    def pressedbtn3(self):
-        print ("Button3")
+    def pressedtext1(self):
+        print ("text 1 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
 
+    def pressedtext2(self):
+        print ("text 2 pressed")
+       #subprocess.call("/home/pi/pigui/***.sh")
+
+    def pressedtext3(self):
+        print ("text 3 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+
+
+
+
+    
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
         ### Hooks to for buttons
-        self.btnOn.clicked.connect(lambda: self.pressedOnButton())
-        self.btnOff.clicked.connect(lambda: self.pressedOffButton())
-        self.btn1.clicked.connect(lambda: self.pressedbtn1())
-        self.btn2.clicked.connect(lambda: self.pressedbtn2())
-        self.btn3.clicked.connect(lambda: self.pressedbtn3())
+        self.btnOnplay.clicked.connect(lambda: self.pressedOnButton())
+        self.btnOffpause.clicked.connect(lambda: self.pressedOffButton())
+        self.DP.clicked.connect(lambda: self.pressedbtn1())
+        self.HDMI.clicked.connect(lambda: self.pressedbtn2())
+        self.text1.clicked.connect(lambda: self.pressedtext1())
+        self.text2.clicked.connect(lambda: self.pressedtext2())
+        self.text3.clicked.connect(lambda: self.pressedtext3())
         ## Add toolbar and items
         
     def pressedInput(self):
