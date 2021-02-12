@@ -105,3 +105,37 @@ print "end"
 Code I used: 
 import subprocess
 subprocess.call"hdmi.sh")
+
+
+
+##I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
+#This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
+
+to run a bash file on your computer, you'll need to give it privileges:
+chmod +x script-name-here.sh
+This will also be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
+
+Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the pi.
+
+create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
+This is what I used:
+MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/ddcctl.sh   #should probably change this to hdmi.sh in future for clarity
+
+
+
+
+
+
+Ideas for how the bash commands will work
+
+
+hdmi.sh == hosted on mac
+dp.sh == hosted on mac, called upon to execute by pi
+
+
+
+
+
+
+
+
