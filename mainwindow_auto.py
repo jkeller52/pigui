@@ -82,12 +82,12 @@ class Ui_MainWindow(object):
         self.Volume = QtWidgets.QWidget()
         self.Volume.setGeometry(QtCore.QRect(0, 0, 311, 231))
         self.Volume.setObjectName("Volume")
-        self.pushButton0 = QtWidgets.QPushButton(self.Volume)
-        self.pushButton0.setGeometry(QtCore.QRect(70, 110, 171, 61))
-        self.pushButton0.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
+        self.pushButton100 = QtWidgets.QPushButton(self.Volume)
+        self.pushButton100.setGeometry(QtCore.QRect(70, 110, 171, 61))
+        self.pushButton100.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
-        self.pushButton0.setObjectName("pushButton0")
+        self.pushButton100.setObjectName("pushButton100")
         self.pushButtonVolDown = QtWidgets.QPushButton(self.Volume)
         self.pushButtonVolDown.setGeometry(QtCore.QRect(30, 10, 91, 91))
         self.pushButtonVolDown.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
@@ -299,7 +299,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
-        self.toolBox_2.setCurrentIndex(0)
+        self.toolBox_2.setCurrentIndex(1)
         self.toolBox.setCurrentIndex(0)
         self.toolBox_3.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -312,7 +312,7 @@ class Ui_MainWindow(object):
         self.prevsong.setText(_translate("MainWindow", "Prev. Song"))
         self.nextsong.setText(_translate("MainWindow", "Next Song"))
         self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.Controls), _translate("MainWindow", "Controls"))
-        self.pushButton0.setText(_translate("MainWindow", "0% (off)"))
+        self.pushButton100.setText(_translate("MainWindow", "0% (off)"))
         self.pushButtonVolDown.setText(_translate("MainWindow", "Vol. Down"))
         self.pushButtonVolUp.setText(_translate("MainWindow", "Vol. Up"))
         self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.Volume), _translate("MainWindow", "Volume"))
