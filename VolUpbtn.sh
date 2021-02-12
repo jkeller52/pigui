@@ -12,6 +12,5 @@ if (MyList contains "Spotify") is true then
 		set sound volume to volcheck
 		
 	end tell
-	
 end if
 EOD
