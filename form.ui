@@ -64,29 +64,239 @@
      <attribute name="title">
       <string>Music</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QToolBox" name="toolBox_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>261</width>
+        <x>0</x>
+        <y>30</y>
+        <width>311</width>
         <height>311</height>
        </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="currentIndex">
        <number>1</number>
       </property>
       <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>311</width>
+         <height>243</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Controls</string>
+       </attribute>
+       <widget class="QPushButton" name="btnOnplay">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>20</y>
+          <width>162</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>PLAY</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnOffpause">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>160</y>
+          <width>162</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>PAUSE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="prevsong">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Prev. Song</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="nextsong">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>90</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Next Song</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>80</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(55, 125, 46);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../Downloads/file-spotify-logo-png-4_2_150x150_1_50.png</pixmap>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>311</width>
+         <height>243</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Volume</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton0">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>0% (off)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton25">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>25%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton50">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>50%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton75">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>75%</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton100">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>80</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>100%</string>
+        </property>
+       </widget>
        <widget class="QLabel" name="japangif">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>210</x>
           <y>0</y>
-          <width>154</width>
-          <height>191</height>
+          <width>101</width>
+          <height>251</height>
          </rect>
         </property>
         <property name="maximumSize">
@@ -120,225 +330,6 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QWidget" name="verticalLayoutWidget_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>190</y>
-          <width>162</width>
-          <height>116</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="Playpause">
-         <item>
-          <widget class="QPushButton" name="btnOnplay">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="text">
-            <string>PLAY</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="btnOffpause">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="text">
-            <string>PAUSE</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QLabel" name="label">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>210</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(55, 125, 46);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>../../../Downloads/file-spotify-logo-png-4_2_150x150_1_50.png</pixmap>
-        </property>
-       </widget>
-       <zorder>verticalLayoutWidget_3</zorder>
-       <zorder>label</zorder>
-       <zorder>japangif</zorder>
-      </widget>
-      <widget class="QWidget" name="page_2">
-       <widget class="QPushButton" name="pushButton25">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>130</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>25%</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton50">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>130</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>50%</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton75">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>130</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>75%</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>20</y>
-          <width>121</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>36</pointsize>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>CrossCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>Volume</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton0">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>70</y>
-          <width>171</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>0% (off)</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="nextsong">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>200</y>
-          <width>111</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>Next Song</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="prevsong">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>200</y>
-          <width>111</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>Prev. Song</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton100">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>130</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>100%</string>
-        </property>
-       </widget>
       </widget>
      </widget>
     </widget>
@@ -346,145 +337,170 @@ border-color: rgb(0, 0, 0);</string>
      <attribute name="title">
       <string>Inputs</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget_2">
+     <widget class="QToolBox" name="toolBox">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>30</y>
-        <width>241</width>
-        <height>291</height>
+        <width>291</width>
+        <height>321</height>
        </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="currentIndex">
        <number>1</number>
       </property>
-      <widget class="QWidget" name="page_3">
-       <widget class="QWidget" name="verticalLayoutWidget">
+      <widget class="QWidget" name="video">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>291</width>
+         <height>253</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Video</string>
+       </attribute>
+       <widget class="QPushButton" name="DP">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>40</y>
-          <width>231</width>
-          <height>231</height>
+          <y>30</y>
+          <width>141</width>
+          <height>61</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QPushButton" name="DP">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>72</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>DP</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="HDMI">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>72</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>HDMI</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>DP</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HDMI">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>HDMI</string>
+        </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_4">
-       <widget class="QWidget" name="verticalLayoutWidget_4">
+      <widget class="QWidget" name="page_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>291</width>
+         <height>253</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Audio</string>
+       </attribute>
+       <widget class="QPushButton" name="AirPods">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>26</y>
+          <x>20</x>
+          <y>0</y>
           <width>241</width>
-          <height>271</height>
+          <height>57</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QPushButton" name="AirPods">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>AirPods</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="JBL">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>JBL</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="FOSI">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>FOSI</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>AirPods</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="FOSI">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>241</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>FOSI</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="JBL">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>241</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>JBL</string>
+        </property>
        </widget>
       </widget>
      </widget>
@@ -493,297 +509,297 @@ border-color: rgb(0, 0, 0);</string>
      <attribute name="title">
       <string>Texts</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget_4">
+     <widget class="QToolBox" name="toolBox_3">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>231</width>
-        <height>301</height>
+        <x>0</x>
+        <y>0</y>
+        <width>311</width>
+        <height>351</height>
        </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="page_8">
-       <widget class="QWidget" name="verticalLayoutWidget_8">
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>311</width>
+         <height>249</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>To Alex</string>
+       </attribute>
+       <widget class="QPushButton" name="text1">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>30</y>
-          <width>231</width>
-          <height>268</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_7">
-         <item>
-          <widget class="QPushButton" name="text1">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>otw</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="text2">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>36</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>call u back</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="text3">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>1sec</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="page_9">
-       <widget class="QWidget" name="verticalLayoutWidget_7">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>50</y>
-          <width>247</width>
-          <height>221</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_6">
-         <item>
-          <widget class="QPushButton" name="text4">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>80</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>text4</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="text5">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>80</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>text5</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Shortcuts">
-     <attribute name="title">
-      <string>Shortcuts</string>
-     </attribute>
-     <widget class="QStackedWidget" name="stackedWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>241</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="page_5">
-       <widget class="QWidget" name="verticalLayoutWidget_5">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>50</y>
-          <width>181</width>
-          <height>178</height>
+          <x>40</x>
+          <y>60</y>
+          <width>111</width>
+          <height>61</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>64</pointsize>
+          <family>Arial</family>
+          <pointsize>48</pointsize>
          </font>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QPushButton" name="sc1">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>64</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>sc1</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="sc2">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>64</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>sc2</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>otw</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
        </widget>
-      </widget>
-      <widget class="QWidget" name="page_6">
-       <widget class="QWidget" name="verticalLayoutWidget_6">
+       <widget class="QPushButton" name="text2">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>50</y>
-          <width>231</width>
-          <height>277</height>
+          <x>50</x>
+          <y>130</y>
+          <width>201</width>
+          <height>57</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
-         <item>
-          <widget class="QPushButton" name="sc3">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>64</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>sc3</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="sc4">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>72</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>sc4</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="sc5">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>64</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>sc5</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>call u back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text3">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>60</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>1sec</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>311</width>
+         <height>249</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>To Tyler</string>
+       </attribute>
+       <widget class="QPushButton" name="text2_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>80</y>
+          <width>201</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>call u back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text1_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>otw</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text3_2">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>10</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>1sec</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text2_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>140</y>
+          <width>201</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>box in 30?</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <attribute name="label">
+        <string>To Aaron</string>
+       </attribute>
+       <widget class="QPushButton" name="text2_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>201</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>call u back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text3_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(4, 1, 1);</string>
+        </property>
+        <property name="text">
+         <string>1sec</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="text2_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>201</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(9, 5, 3);</string>
+        </property>
+        <property name="text">
+         <string>in class</string>
+        </property>
        </widget>
       </widget>
      </widget>
