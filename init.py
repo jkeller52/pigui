@@ -76,7 +76,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedMute(self):
         #print ("pushButton0 pressed")
-        subprocess.call("/home/pi/pigui/pushButton0.sh")
+        subprocess.call("/home/pi/pigui/Mute.sh")
         #applescript/bash to change input to set audio volume to 0% 
 
     def pressedpushButtonVolDown(self):
@@ -105,7 +105,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.JBL.clicked.connect(lambda: self.pressedJBL())
         self.FOSI.clicked.connect(lambda: self.pressedFOSI())
         self.pushButtonVolDown.clicked.connect(lambda: self.pressedpushButtonVolDown())
-        self.pushButtonVolUp.clicked.connect(lambda: self.pressedpushButtonVolUp()
+        self.pushButtonVolUp.clicked.connect(lambda: self.pressedpushButtonVolUp())
         self.Mute.clicked.connect(lambda: self.pressedMute())
         self.nextsong.clicked.connect(lambda: self.pressednextsong())
         self.prevsong.clicked.connect(lambda: self.pressedprevsong())
