@@ -10,9 +10,7 @@ if (MyList contains "Spotify") is true then
 		set volcheck to get sound volume
 		set volcheck to volcheck - 5
 		set sound volume to volcheck
-		
 	end tell
-	
 end if
 EOD
 
