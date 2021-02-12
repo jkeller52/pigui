@@ -62,12 +62,18 @@ class Ui_MainWindow(object):
         self.btnOffpause.setObjectName("btnOffpause")
         self.prevsong = QtWidgets.QPushButton(self.Controls)
         self.prevsong.setGeometry(QtCore.QRect(0, 70, 111, 61))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.prevsong.setFont(font)
         self.prevsong.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.prevsong.setObjectName("prevsong")
         self.nextsong = QtWidgets.QPushButton(self.Controls)
         self.nextsong.setGeometry(QtCore.QRect(200, 70, 111, 61))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.nextsong.setFont(font)
         self.nextsong.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
@@ -111,7 +117,7 @@ class Ui_MainWindow(object):
         self.toolBox.setFont(font)
         self.toolBox.setObjectName("toolBox")
         self.video = QtWidgets.QWidget()
-        self.video.setGeometry(QtCore.QRect(0, 0, 291, 151))
+        self.video.setGeometry(QtCore.QRect(0, 0, 291, 191))
         self.video.setObjectName("video")
         self.DP = QtWidgets.QPushButton(self.video)
         self.DP.setGeometry(QtCore.QRect(60, 0, 161, 61))
@@ -275,9 +281,9 @@ class Ui_MainWindow(object):
         self.action2_0.setObjectName("action2_0")
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.toolBox_2.setCurrentIndex(1)
-        self.toolBox.setCurrentIndex(1)
+        self.toolBox.setCurrentIndex(0)
         self.toolBox_3.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
