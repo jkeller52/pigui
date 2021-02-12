@@ -18,7 +18,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     ### functions for the buttons to call
     def pressedbtnOnplay(self):
         print ("Pressed On!")
-        subprocess.call("/home/pi/pigui/pausebtn.sh")
+        subprocess.call("/home/pi/pigui/pause.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
         #pausebtn.sh works as a play/pause reverse switch
 
