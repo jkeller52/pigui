@@ -49,12 +49,12 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedAirPods(self):
         print ("AirPods pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        subprocess.call("/home/pi/pigui/airpods.sh")
         #applescript/bash to change input to airpods
 
     def pressedJBL(self):
         print ("JBL pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        subprocess.call("/home/pi/pigui/jbl.sh")
         #applescript/bash to change input to JBL Charge 3
 
     def pressedFOSI(self):
