@@ -47,45 +47,56 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("text 3 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
 
-    def pressedairpods(self)
-        print ("airpods pressed")
+    def pressedAirPods(self):
+        print ("AirPods pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to airpods
 
-    def pressedJBL(self)
-        print ("jbl pressed")
+    def pressedJBL(self):
+        print ("JBL pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to JBL Charge 3
 
-    def pressedFOSI(self)
-        print ("fosi pressed")
+    def pressedFOSI(self):
+        print ("FOSI pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to fosi audio
 
-    def pressedpushButton25(self)
+    def pressedpushButton25(self):
         print ("pushButton25 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to increase audio volume 25%
 
-    def pressedpushButton50(self)
+    def pressedpushButton50(self):
         print ("pushButton50 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to increase audio volume 50%
 
-     def pressedpushButton75(self)
+    def pressedpushButton75(self):
         print ("pushButton75 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to increase audio volume 75%
 
-     def pressedpushButton100(self)
+    
+    def pressedpushButton100(self):
         print ("pushButton100 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to increase audio volume 100%    
 
-     def pressedpushButton0(self)
+    def pressedpushButton0(self):
         print ("pushButton0 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to set audio volume to 0% 
+
+    def pressedprevsong(self):
+        print ("prevsong pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change the song to the previous one (Spotify-based)
+
+    def pressednextsong(self):
+        print ("nextsong pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change the song to the next one (Spotify-based)
 
     def __init__(self):
         super(self.__class__, self).__init__()
@@ -98,13 +109,16 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.text1.clicked.connect(lambda: self.pressedtext1())
         self.text2.clicked.connect(lambda: self.pressedtext2())
         self.text3.clicked.connect(lambda: self.pressedtext3())
-        #saved for texts 3-6
-        #
-        #
-        self.airpods.clicked.connect(lambda: self.airpods())
-        self.JBL.clicked.connect(lambda: self.JBL())
-        self.FOSI.clicked.connect(lambda: self.FOSI())
-
+        self.AirPods.clicked.connect(lambda: self.pressedAirPods())
+        self.JBL.clicked.connect(lambda: self.pressedJBL())
+        self.FOSI.clicked.connect(lambda: self.pressedFOSI())
+        self.pushButton25.clicked.connect(lambda: self.pressedpushButton25())
+        self.pushButton50.clicked.connect(lambda: self.pressedpushButton50())
+        self.pushButton75.clicked.connect(lambda: self.pressedpushButton75())
+        self.pushButton100.clicked.connect(lambda: self.pressedpushButton100())
+        self.pushButton0.clicked.connect(lambda: self.pressedpushButton0())
+        self.nextsong.clicked.connect(lambda: self.pressednextsong())
+        self.prevsong.clicked.connect(lambda: self.pressedprevsong())
         ## Add toolbar and items
         
     def pressedInput(self):
