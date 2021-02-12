@@ -18,13 +18,18 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     ### functions for the buttons to call
     def pressedOnButton(self):
         print ("Pressed On!")
+        subprocess.call("/home/pi/pigui/playbtn.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
 
     def pressedOffButton(self):
         print ("Pressed Off!")
+        #subprocess.call("/home/pi/pigui/playbtn.sh")
+        subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
     def pressedDP(self):
         print ("DP")
         subprocess.call("/home/pi/pigui/btn1.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/btn1.sh")
 
     def pressedHDMI(self):
         print ("HDMI")
@@ -42,9 +47,6 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("text 3 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
 
-
-
-
     
     def __init__(self):
         super(self.__class__, self).__init__()
@@ -52,8 +54,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         ### Hooks to for buttons
         self.btnOnplay.clicked.connect(lambda: self.pressedOnButton())
         self.btnOffpause.clicked.connect(lambda: self.pressedOffButton())
-        self.DP.clicked.connect(lambda: self.pressedbtn1())
-        self.HDMI.clicked.connect(lambda: self.pressedbtn2())
+        self.DP.clicked.connect(lambda: self.pressedDP())
+        self.HDMI.clicked.connect(lambda: self.pressedHDMI())
         self.text1.clicked.connect(lambda: self.pressedtext1())
         self.text2.clicked.connect(lambda: self.pressedtext2())
         self.text3.clicked.connect(lambda: self.pressedtext3())
