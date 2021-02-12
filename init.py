@@ -22,7 +22,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
         #pausebtn.sh works as a play/pause reverse switch
 
-    def pressedbtnOffPause(self):
+    def pressedbtnOffpause(self):
         print ("Pressed Off!")
         subprocess.call("/home/pi/pigui/pausebtn.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
