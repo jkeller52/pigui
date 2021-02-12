@@ -152,5 +152,8 @@ redirect.sh --> btn1redirect.sh
 
 an issue i was running into was that i forgot to change the file destinations in init.py to be bash scripts hosted on the pi. Once I changed this, btn1.sh worked upon hitting button 1 in the gui.After you do this, you'll have to be comfortable testing on the pi itself, as you will be unable to run the gui on your pc from >>python3 init.py
 
+any time a .sh file says 'file not found', add this to the beginning of the file:
+export PATH=/bin:/usr/bin:/usr/local/bin
+
 
 
