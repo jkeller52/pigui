@@ -205,7 +205,7 @@ border-color: rgb(0, 0, 0);</string>
        <attribute name="label">
         <string>Volume</string>
        </attribute>
-       <widget class="QPushButton" name="pushButton100">
+       <widget class="QPushButton" name="Mute">
         <property name="geometry">
          <rect>
           <x>70</x>
@@ -220,7 +220,7 @@ color: rgb(0, 0, 0);
 border-color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
-         <string>0% (off)</string>
+         <string>Mute</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButtonVolDown">

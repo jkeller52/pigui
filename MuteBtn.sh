@@ -8,7 +8,7 @@ end tell
 if (MyList contains "Spotify") is true then
 	tell application "Spotify"
 		set volcheck to get sound volume
-		set volcheck to volcheck - 100
+		set volcheck to volcheck - 50
 		set sound volume to volcheck
 		
 	end tell

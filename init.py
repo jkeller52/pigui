@@ -74,7 +74,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #subprocess.call("/home/pi/pigui/fosi.sh")
         #applescript/bash to change input to fosi audio
 
-    def pressedpushButton100(self):
+    def pressedMute(self):
         #print ("pushButton0 pressed")
         subprocess.call("/home/pi/pigui/pushButton0.sh")
         #applescript/bash to change input to set audio volume to 0% 
@@ -106,7 +106,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.FOSI.clicked.connect(lambda: self.pressedFOSI())
         self.pushButtonVolDown.clicked.connect(lambda: self.pressedpushButtonVolDown())
         self.pushButtonVolUp.clicked.connect(lambda: self.pressedpushButtonVolUp()
-        self.pushButton100.clicked.connect(lambda: self.pressedpushButton100())
+        self.Mute.clicked.connect(lambda: self.pressedMute())
         self.nextsong.clicked.connect(lambda: self.pressednextsong())
         self.prevsong.clicked.connect(lambda: self.pressedprevsong())
         ## Add toolbar and items
