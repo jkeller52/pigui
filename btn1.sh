@@ -1,2 +1,1 @@
-ls /jacobkeller/documents/github/pigui
-./ddcctl.sh
+ssh jacobkeller@mbp.wowway.com < ./Users/jacobkeller/Documents/GitHub/pigui/ddcctl.sh
