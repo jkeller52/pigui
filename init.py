@@ -81,7 +81,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedpushButtonVolDown(self):
         #print ("pushButtonVolDown pressed")
-        subprocess.call("/home/pi/pigui/pushButtonVolDown.sh")
+        subprocess.call("/home/pi/pigui/VolDown.sh")
         #applescript/bash to change input to decrease audio volume
 
     def pressedpushButtonVolUp(self):
@@ -104,8 +104,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.AirPods.clicked.connect(lambda: self.pressedAirPods())
         self.JBL.clicked.connect(lambda: self.pressedJBL())
         self.FOSI.clicked.connect(lambda: self.pressedFOSI())
-        self.pushButtonVolDown.clicked.connect(lambda: self.pressedpushButtonVolDown())
-        self.pushButtonVolUp.clicked.connect(lambda: self.pressedpushButtonVolUp())
+        self.VolDown.clicked.connect(lambda: self.pressedVolDown())
+        self.VolUp.clicked.connect(lambda: self.pressedVolUp())
         self.Mute.clicked.connect(lambda: self.pressedMute())
         self.nextsong.clicked.connect(lambda: self.pressednextsong())
         self.prevsong.clicked.connect(lambda: self.pressedprevsong())
