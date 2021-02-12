@@ -88,18 +88,18 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.Mute.setObjectName("Mute")
-        self.pushButtonVolDown = QtWidgets.QPushButton(self.Volume)
-        self.pushButtonVolDown.setGeometry(QtCore.QRect(30, 10, 91, 91))
-        self.pushButtonVolDown.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
+        self.VolDown = QtWidgets.QPushButton(self.Volume)
+        self.VolDown.setGeometry(QtCore.QRect(30, 10, 91, 91))
+        self.VolDown.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
-        self.pushButtonVolDown.setObjectName("pushButtonVolDown")
-        self.pushButtonVolUp = QtWidgets.QPushButton(self.Volume)
-        self.pushButtonVolUp.setGeometry(QtCore.QRect(190, 10, 91, 91))
-        self.pushButtonVolUp.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
+        self.VolDown.setObjectName("VolDown")
+        self.VolUp = QtWidgets.QPushButton(self.Volume)
+        self.VolUp.setGeometry(QtCore.QRect(190, 10, 91, 91))
+        self.VolUp.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
-        self.pushButtonVolUp.setObjectName("pushButtonVolUp")
+        self.VolUp.setObjectName("VolUp")
         self.toolBox_2.addItem(self.Volume, "")
         self.tabWidget.addTab(self.MusicTab, "")
         self.inputs = QtWidgets.QWidget()
@@ -313,8 +313,8 @@ class Ui_MainWindow(object):
         self.nextsong.setText(_translate("MainWindow", "Next Song"))
         self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.Controls), _translate("MainWindow", "Controls"))
         self.Mute.setText(_translate("MainWindow", "Mute"))
-        self.pushButtonVolDown.setText(_translate("MainWindow", "Vol. Down"))
-        self.pushButtonVolUp.setText(_translate("MainWindow", "Vol. Up"))
+        self.VolDown.setText(_translate("MainWindow", "Vol. Down"))
+        self.VolUp.setText(_translate("MainWindow", "Vol. Up"))
         self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.Volume), _translate("MainWindow", "Volume"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.MusicTab), _translate("MainWindow", "Music"))
         self.DP.setText(_translate("MainWindow", "DP"))

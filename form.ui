@@ -223,7 +223,7 @@ border-color: rgb(0, 0, 0);</string>
          <string>Mute</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButtonVolDown">
+       <widget class="QPushButton" name="VolDown">
         <property name="geometry">
          <rect>
           <x>30</x>
@@ -241,7 +241,7 @@ border-color: rgb(0, 0, 0);</string>
          <string>Vol. Down</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButtonVolUp">
+       <widget class="QPushButton" name="VolUp">
         <property name="geometry">
          <rect>
           <x>190</x>
