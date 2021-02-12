@@ -18,13 +18,24 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     ### functions for the buttons to call
     def pressedbtnOnplay(self):
         print ("Pressed On!")
-        subprocess.call("/home/pi/pigui/playbtn.sh")
+        subprocess.call("/home/pi/pigui/pausebtn.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
+        #pausebtn.sh works as a play/pause reverse switch
 
     def pressedbtnOffPause(self):
         print ("Pressed Off!")
         subprocess.call("/home/pi/pigui/pausebtn.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
+
+    def pressedprevsong(self):
+        print ("prevsong pressed")
+        subprocess.call("/home/pi/pigui/playprev.sh")
+        #applescript/bash to change the song to the previous one (Spotify-based)
+
+    def pressednextsong(self):
+        print ("nextsong pressed")
+        subprocess.call("/home/pi/pigui/playnext.sh")
+        #applescript/bash to change the song to the next one (Spotify-based)
 
     def pressedDP(self):
         print ("DP")
@@ -88,15 +99,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #subprocess.call("/home/pi/pigui/***.sh")
         #applescript/bash to change input to set audio volume to 0% 
 
-    def pressedprevsong(self):
-        print ("prevsong pressed")
-        subprocess.call("/home/pi/pigui/playprev.sh")
-        #applescript/bash to change the song to the previous one (Spotify-based)
 
-    def pressednextsong(self):
-        print ("nextsong pressed")
-        subprocess.call("/home/pi/pigui/playnext.sh")
-        #applescript/bash to change the song to the next one (Spotify-based)
 
     def __init__(self):
         super(self.__class__, self).__init__()

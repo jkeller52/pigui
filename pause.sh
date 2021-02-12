@@ -1,8 +1,4 @@
 #!/bin/bash
 
-#runs AppleScript to play music from 'Liked Songs' Playlist
-osascript <<EOD
-    tell application "Spotify"
- 	pause "Liked Songs"
- end tell
-EOD
+export PATH=/bin:/usr/bin:/usr/local/bin
+ssh -T jacobkeller@mbp.wowway.com '/Users/jacobkeller/Documents/GitHub/pigui/pause.sh'
