@@ -16,12 +16,12 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     # access variables inside of the UI's file
 
     ### functions for the buttons to call
-    def pressedOnButton(self):
+    def pressedbtnOnplay(self):
         print ("Pressed On!")
         subprocess.call("/home/pi/pigui/playbtn.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
 
-    def pressedOffButton(self):
+    def pressedbtnOffPause(self):
         print ("Pressed Off!")
         #subprocess.call("/home/pi/pigui/playbtn.sh")
         subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
@@ -102,8 +102,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
         ### Hooks to for buttons
-        self.btnOnplay.clicked.connect(lambda: self.pressedOnButton())
-        self.btnOffpause.clicked.connect(lambda: self.pressedOffButton())
+        self.btnOnplay.clicked.connect(lambda: self.pressedbtnOnplay())
+        self.btnOffpause.clicked.connect(lambda: self.pressedbtnOffPause())
         self.DP.clicked.connect(lambda: self.pressedDP())
         self.HDMI.clicked.connect(lambda: self.pressedHDMI())
         self.text1.clicked.connect(lambda: self.pressedtext1())

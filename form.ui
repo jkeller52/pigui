@@ -536,7 +536,7 @@ border-color: rgb(0, 0, 0);</string>
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="page_3">
+      <widget class="QWidget" name="Jacob">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -546,7 +546,7 @@ border-color: rgb(0, 0, 0);</string>
         </rect>
        </property>
        <attribute name="label">
-        <string>To Alex</string>
+        <string>To Alex (Jacob for Testing)</string>
        </attribute>
        <widget class="QPushButton" name="text1">
         <property name="geometry">
@@ -627,7 +627,7 @@ border-color: rgb(0, 0, 0);</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_4">
+      <widget class="QWidget" name="Tyler">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -639,7 +639,7 @@ border-color: rgb(0, 0, 0);</string>
        <attribute name="label">
         <string>To Tyler</string>
        </attribute>
-       <widget class="QPushButton" name="text2_2">
+       <widget class="QPushButton" name="callubackTyler">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -661,7 +661,7 @@ border-color: rgb(0, 0, 0);</string>
          <string>call u back</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="text1_2">
+       <widget class="QPushButton" name="otwTyler">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -689,7 +689,7 @@ border-color: rgb(0, 0, 0);</string>
          </size>
         </property>
        </widget>
-       <widget class="QPushButton" name="text3_2">
+       <widget class="QPushButton" name="onesecTyler">
         <property name="geometry">
          <rect>
           <x>130</x>
@@ -717,7 +717,7 @@ border-color: rgb(0, 0, 0);</string>
          </size>
         </property>
        </widget>
-       <widget class="QPushButton" name="text2_3">
+       <widget class="QPushButton" name="boxin30">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -740,16 +740,16 @@ border-color: rgb(0, 0, 0);</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_5">
+      <widget class="QWidget" name="Aaron">
        <attribute name="label">
         <string>To Aaron</string>
        </attribute>
        <widget class="QPushButton" name="text2_7">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>30</x>
           <y>70</y>
-          <width>221</width>
+          <width>241</width>
           <height>57</height>
          </rect>
         </property>
@@ -769,9 +769,9 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="text3_5">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>30</x>
           <y>0</y>
-          <width>121</width>
+          <width>131</width>
           <height>71</height>
          </rect>
         </property>
@@ -797,7 +797,7 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="text2_8">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>30</x>
           <y>130</y>
           <width>221</width>
           <height>57</height>
