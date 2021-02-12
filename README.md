@@ -113,7 +113,16 @@ subprocess.call"hdmi.sh")
 
 to run a bash file on your computer, you'll need to give it privileges:
 chmod +x script-name-here.sh
-This will also be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
+
+so far:
+chmod +x hdmi.sh
+chmod +x redirect.sh
+chmod +x btn1.sh
+
+make sure to change in the directory before settting permissions with chmod +x:
+cd /github/pigui
+
+This also may be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
 
 Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the pi.
 
@@ -133,6 +142,12 @@ hdmi.sh == hosted on mac
 dp.sh == hosted on mac, called upon to execute by pi
 
 
+
+currently, on raspberry pi the hdmi.sh bash script is reponsbile for ssh'ing into the Mac. It then executes a locally held (on the mac) bash script titled redirect.sh
+
+Name changes: 
+hdmi.sh --> btn1.sh
+redirect.sh --> btn1redirect.sh
 
 
 
