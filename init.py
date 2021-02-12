@@ -90,12 +90,12 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedprevsong(self):
         print ("prevsong pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        subprocess.call("/home/pi/pigui/playprev.sh")
         #applescript/bash to change the song to the previous one (Spotify-based)
 
     def pressednextsong(self):
         print ("nextsong pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        subprocess.call("/home/pi/pigui/playnext.sh")
         #applescript/bash to change the song to the next one (Spotify-based)
 
     def __init__(self):
