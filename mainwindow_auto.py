@@ -38,7 +38,7 @@ class Ui_MainWindow(object):
         self.MusicTab = QtWidgets.QWidget()
         self.MusicTab.setObjectName("MusicTab")
         self.stackedWidget = QtWidgets.QStackedWidget(self.MusicTab)
-        self.stackedWidget.setGeometry(QtCore.QRect(0, 0, 271, 321))
+        self.stackedWidget.setGeometry(QtCore.QRect(10, 110, 251, 201))
         self.stackedWidget.setStyleSheet("color: rgb(255, 255, 255);")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
@@ -87,31 +87,31 @@ class Ui_MainWindow(object):
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.pushButton25 = QtWidgets.QPushButton(self.page_2)
-        self.pushButton25.setGeometry(QtCore.QRect(10, 230, 71, 81))
+        self.pushButton25.setGeometry(QtCore.QRect(10, 110, 71, 81))
         self.pushButton25.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.pushButton25.setObjectName("pushButton25")
         self.pushButton_50 = QtWidgets.QPushButton(self.page_2)
-        self.pushButton_50.setGeometry(QtCore.QRect(70, 230, 71, 81))
+        self.pushButton_50.setGeometry(QtCore.QRect(70, 110, 71, 81))
         self.pushButton_50.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.pushButton_50.setObjectName("pushButton_50")
         self.pushButton_75 = QtWidgets.QPushButton(self.page_2)
-        self.pushButton_75.setGeometry(QtCore.QRect(130, 230, 71, 81))
+        self.pushButton_75.setGeometry(QtCore.QRect(130, 110, 71, 81))
         self.pushButton_75.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.pushButton_75.setObjectName("pushButton_75")
         self.pushButton_100 = QtWidgets.QPushButton(self.page_2)
-        self.pushButton_100.setGeometry(QtCore.QRect(190, 230, 71, 81))
+        self.pushButton_100.setGeometry(QtCore.QRect(190, 110, 71, 81))
         self.pushButton_100.setStyleSheet("background-color: rgba(43, 43, 43, 194);\n"
 "color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 0);")
         self.pushButton_100.setObjectName("pushButton_100")
         self.label_2 = QtWidgets.QLabel(self.page_2)
-        self.label_2.setGeometry(QtCore.QRect(50, 170, 161, 51))
+        self.label_2.setGeometry(QtCore.QRect(60, 50, 161, 51))
         font = QtGui.QFont()
         font.setPointSize(48)
         self.label_2.setFont(font)
@@ -190,7 +190,7 @@ class Ui_MainWindow(object):
         self.Texting = QtWidgets.QWidget()
         self.Texting.setObjectName("Texting")
         self.stackedWidget_4 = QtWidgets.QStackedWidget(self.Texting)
-        self.stackedWidget_4.setGeometry(QtCore.QRect(10, 20, 231, 301))
+        self.stackedWidget_4.setGeometry(QtCore.QRect(10, 120, 231, 161))
         self.stackedWidget_4.setStyleSheet("color: rgb(255, 255, 255);")
         self.stackedWidget_4.setObjectName("stackedWidget_4")
         self.page_8 = QtWidgets.QWidget()
@@ -331,7 +331,7 @@ class Ui_MainWindow(object):
         self.action2_0.setObjectName("action2_0")
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         self.stackedWidget.setCurrentIndex(1)
         self.stackedWidget_2.setCurrentIndex(1)
         self.stackedWidget_4.setCurrentIndex(0)
