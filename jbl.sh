@@ -1,7 +1,4 @@
 #!/bin/bash
+export PATH=/bin:/usr/bin:/usr/local/bin
+ssh -T jacobkeller@mbp.wowway.com '/Users/jacobkeller/Documents/GitHub/pigui/jblbtn.sh'
 
-osascript <<EOD
-    tell application "Spotify"
- 	play "Liked Songs"
- end tell
-EOD
