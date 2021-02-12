@@ -150,7 +150,7 @@ hdmi.sh --> btn1.sh
 redirect.sh --> btn1redirect.sh
 
 
-
+an issue i was running into was that i forgot to change the file destinations in init.py to be bash scripts hosted on the pi. Once I changed this, btn1.sh worked upon hitting button 1 in the gui.
 
 
 
