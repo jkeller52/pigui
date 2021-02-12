@@ -10,7 +10,6 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidg
 from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
 
-export PATH=/bin:/usr/bin:/usr/local/bin
 
 
 
@@ -28,11 +27,12 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("Pressed Off!")
 
     def pressedbtn1(self):
-        #print ("Button1")
+        print ("Button1")
         subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/btn1.sh")
 
     def pressedbtn2(self):
         print ("Button2")
+        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/btn2.sh")
 
     def pressedbtn3(self):
         print ("Button3")
