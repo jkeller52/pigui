@@ -23,8 +23,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtnOffPause(self):
         print ("Pressed Off!")
-        #subprocess.call("/home/pi/pigui/playbtn.sh")
-        subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
+        subprocess.call("/home/pi/pigui/playbtn.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
     def pressedDP(self):
         print ("DP")
@@ -59,7 +59,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedFOSI(self):
         print ("FOSI pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        #subprocess.call("/home/pi/pigui/fosi.sh")
         #applescript/bash to change input to fosi audio
 
     def pressedpushButton25(self):
