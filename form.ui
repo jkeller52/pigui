@@ -58,7 +58,7 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="MusicTab">
      <attribute name="title">
@@ -272,7 +272,7 @@ border-color: rgb(0, 0, 0);</string>
         <x>10</x>
         <y>30</y>
         <width>291</width>
-        <height>321</height>
+        <height>291</height>
        </rect>
       </property>
       <property name="font">
@@ -289,7 +289,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>241</height>
+         <height>211</height>
         </rect>
        </property>
        <attribute name="label">
@@ -352,7 +352,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>241</height>
+         <height>211</height>
         </rect>
        </property>
        <attribute name="label">
