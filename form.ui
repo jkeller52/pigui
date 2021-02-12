@@ -40,10 +40,10 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>281</width>
-      <height>361</height>
+      <x>0</x>
+      <y>10</y>
+      <width>321</width>
+      <height>391</height>
      </rect>
     </property>
     <property name="font">
@@ -58,7 +58,7 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="MusicTab">
      <attribute name="title">
@@ -69,15 +69,15 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>251</width>
-        <height>301</height>
+        <width>281</width>
+        <height>321</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QLabel" name="japangif">
@@ -192,9 +192,9 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>110</y>
-          <width>71</width>
-          <height>81</height>
+          <y>130</y>
+          <width>61</width>
+          <height>51</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -209,10 +209,10 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="pushButton_50">
         <property name="geometry">
          <rect>
-          <x>60</x>
-          <y>110</y>
-          <width>71</width>
-          <height>81</height>
+          <x>70</x>
+          <y>130</y>
+          <width>61</width>
+          <height>51</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -227,10 +227,10 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="pushButton_75">
         <property name="geometry">
          <rect>
-          <x>120</x>
-          <y>110</y>
-          <width>71</width>
-          <height>81</height>
+          <x>140</x>
+          <y>130</y>
+          <width>61</width>
+          <height>51</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -242,36 +242,18 @@ border-color: rgb(0, 0, 0);</string>
          <string>75%</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_100">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>110</y>
-          <width>71</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>100%</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>50</y>
-          <width>161</width>
+          <x>80</x>
+          <y>20</y>
+          <width>121</width>
           <height>51</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>48</pointsize>
+          <pointsize>36</pointsize>
          </font>
         </property>
         <property name="cursor">
@@ -283,6 +265,78 @@ color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
          <string>Volume</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton0">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>0% (off)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="nextsong">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>200</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Next Song</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="nextsong_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>200</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Prev. Song</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_100">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>130</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(43, 43, 43, 194);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>100%</string>
         </property>
        </widget>
       </widget>
@@ -307,6 +361,80 @@ color: rgb(0, 0, 0);</string>
       <property name="currentIndex">
        <number>1</number>
       </property>
+      <widget class="QWidget" name="page_4">
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>26</y>
+          <width>241</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="airpods">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>36</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(4, 1, 1);</string>
+           </property>
+           <property name="text">
+            <string>AirPods</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="jbl">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>36</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(9, 5, 3);</string>
+           </property>
+           <property name="text">
+            <string>JBL</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="fosi">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>36</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(4, 1, 1);</string>
+           </property>
+           <property name="text">
+            <string>FOSI</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
       <widget class="QWidget" name="page_3">
        <widget class="QWidget" name="verticalLayoutWidget">
         <property name="geometry">
@@ -359,80 +487,6 @@ color: rgb(0, 0, 0);</string>
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_4">
-       <widget class="QWidget" name="verticalLayoutWidget_4">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>26</y>
-          <width>241</width>
-          <height>271</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QPushButton" name="airpods">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>AirPods</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="jbl">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(9, 5, 3);</string>
-           </property>
-           <property name="text">
-            <string>JBL</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="fosi">
-           <property name="font">
-            <font>
-             <family>Arial</family>
-             <pointsize>48</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(4, 1, 1);</string>
-           </property>
-           <property name="text">
-            <string>FOSI</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="Texting">
@@ -443,7 +497,7 @@ color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>10</y>
+        <y>20</y>
         <width>231</width>
         <height>301</height>
        </rect>

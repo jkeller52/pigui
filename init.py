@@ -47,7 +47,46 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("text 3 pressed")
         #subprocess.call("/home/pi/pigui/***.sh")
 
-    
+    def pressedairpods(self)
+        print ("airpods pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to airpods
+
+    def pressedJBL(self)
+        print ("jbl pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to JBL Charge 3
+
+    def pressedFOSI(self)
+        print ("fosi pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to fosi audio
+
+    def pressedpushButton25(self)
+        print ("pushButton25 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to increase audio volume 25%
+
+    def pressedpushButton50(self)
+        print ("pushButton50 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to increase audio volume 50%
+
+     def pressedpushButton75(self)
+        print ("pushButton75 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to increase audio volume 75%
+
+     def pressedpushButton100(self)
+        print ("pushButton100 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to increase audio volume 100%    
+
+     def pressedpushButton0(self)
+        print ("pushButton0 pressed")
+        #subprocess.call("/home/pi/pigui/***.sh")
+        #applescript/bash to change input to set audio volume to 0% 
+
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
@@ -59,6 +98,13 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.text1.clicked.connect(lambda: self.pressedtext1())
         self.text2.clicked.connect(lambda: self.pressedtext2())
         self.text3.clicked.connect(lambda: self.pressedtext3())
+        #saved for texts 3-6
+        #
+        #
+        self.airpods.clicked.connect(lambda: self.airpods())
+        self.JBL.clicked.connect(lambda: self.JBL())
+        self.FOSI.clicked.connect(lambda: self.FOSI())
+
         ## Add toolbar and items
         
     def pressedInput(self):
