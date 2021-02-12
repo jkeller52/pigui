@@ -1,8 +1,8 @@
 #init.py(main substitute), is basically main 
-# always seem to need this
 import sys
 import os
-# This gets the Qt stuff
+import subprocess #for calling bas scripts
+# This gets the Qt stuff for the GUI
 import PyQt5
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
@@ -12,14 +12,8 @@ from PyQt5.QtCore import pyqtSlot
 # This is our window from QtCreator
 import mainwindow_auto
 
-#now, how do I execute ssh commands...
-import paramiko
 
-hostname = "@jacobs-mbp.wowway.com"
-username = "jacobkeller"
-password = "1943"
-#now what...
-
+#subprocess.call("hdmi.sh")
 
 
  
@@ -36,7 +30,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtn1(self):
         print ("Button1")
-        #subprocess.run(["ssh jacobkeller@jacobs-mbp.wowway.com python -u - < hdmi1.py"])
+        subprocess.call("hdmi.sh")
 
     def pressedbtn2(self):
         print ("Button2")
