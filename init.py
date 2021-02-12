@@ -103,7 +103,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.setupUi(self) # gets defined in the UI file
         ### Hooks to for buttons
         self.btnOnplay.clicked.connect(lambda: self.pressedbtnOnplay())
-        self.btnOffpause.clicked.connect(lambda: self.pressedbtnOffPause())
+        self.btnOffpause.clicked.connect(lambda: self.pressedbtnOffpause())
         self.DP.clicked.connect(lambda: self.pressedDP())
         self.HDMI.clicked.connect(lambda: self.pressedHDMI())
         self.text1.clicked.connect(lambda: self.pressedtext1())

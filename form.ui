@@ -58,7 +58,7 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="MusicTab">
      <attribute name="title">
@@ -357,7 +357,7 @@ border-color: rgb(0, 0, 0);</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="video">
        <property name="geometry">
@@ -365,7 +365,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>211</height>
+         <height>171</height>
         </rect>
        </property>
        <attribute name="label">
@@ -377,7 +377,7 @@ border-color: rgb(0, 0, 0);</string>
           <x>60</x>
           <y>0</y>
           <width>161</width>
-          <height>91</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="font">
@@ -403,9 +403,9 @@ border-color: rgb(0, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>60</x>
-          <y>100</y>
+          <y>80</y>
           <width>161</width>
-          <height>101</height>
+          <height>61</height>
          </rect>
         </property>
         <property name="font">
@@ -428,7 +428,7 @@ border-color: rgb(0, 0, 0);</string>
          <x>0</x>
          <y>0</y>
          <width>291</width>
-         <height>211</height>
+         <height>171</height>
         </rect>
        </property>
        <attribute name="label">
@@ -510,6 +510,73 @@ border-color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
          <string>JBL</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <attribute name="label">
+        <string>Brightness</string>
+       </attribute>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>160</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>20</y>
+          <width>60</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Pi</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>100</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Computer</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>120</y>
+          <width>160</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </widget>

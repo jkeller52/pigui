@@ -7,7 +7,6 @@ end tell
 if (MyList contains "Spotify") is true then
 	tell application "Spotify" to next track
 end if
-
 EOD
 
 
