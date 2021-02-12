@@ -23,7 +23,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
     def pressedbtnOffPause(self):
         print ("Pressed Off!")
-        subprocess.call("/home/pi/pigui/playbtn.sh")
+        subprocess.call("/home/pi/pigui/pausebtn.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
     def pressedDP(self):
