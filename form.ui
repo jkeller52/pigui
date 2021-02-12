@@ -58,7 +58,7 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="MusicTab">
      <attribute name="title">
@@ -208,8 +208,8 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="pushButton0">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>10</y>
+          <x>70</x>
+          <y>110</y>
           <width>171</width>
           <height>61</height>
          </rect>
@@ -223,13 +223,13 @@ border-color: rgb(0, 0, 0);</string>
          <string>0% (off)</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton25">
+       <widget class="QPushButton" name="pushButtonVolDown">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>80</y>
-          <width>61</width>
-          <height>51</height>
+          <x>30</x>
+          <y>10</y>
+          <width>91</width>
+          <height>91</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -238,16 +238,16 @@ color: rgb(0, 0, 0);
 border-color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
-         <string>25%</string>
+         <string>Vol. Down</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton50">
+       <widget class="QPushButton" name="pushButtonVolUp">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>80</y>
-          <width>61</width>
-          <height>51</height>
+          <x>190</x>
+          <y>10</y>
+          <width>91</width>
+          <height>91</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -256,83 +256,7 @@ color: rgb(0, 0, 0);
 border-color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
-         <string>50%</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton75">
-        <property name="geometry">
-         <rect>
-          <x>100</x>
-          <y>80</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>75%</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton100">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>80</y>
-          <width>61</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(43, 43, 43, 194);
-color: rgb(0, 0, 0);
-border-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>100%</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="japangif">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>0</y>
-          <width>101</width>
-          <height>251</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>154</width>
-          <height>300</height>
-         </size>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="lineWidth">
-         <number>2</number>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::RichText</enum>
-        </property>
-        <property name="pixmap">
-         <pixmap>../../../Downloads/gif animations/601d08ef97647985814841.gif</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-        <property name="openExternalLinks">
-         <bool>false</bool>
+         <string>Vol. Up</string>
         </property>
        </widget>
       </widget>

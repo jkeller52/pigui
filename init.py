@@ -73,31 +73,21 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #subprocess.call("/home/pi/pigui/fosi.sh")
         #applescript/bash to change input to fosi audio
 
-    def pressedpushButton25(self):
-        print ("pushButton25 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-        #applescript/bash to change input to increase audio volume 25%
-
-    def pressedpushButton50(self):
-        print ("pushButton50 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-        #applescript/bash to change input to increase audio volume 50%
-
-    def pressedpushButton75(self):
-        print ("pushButton75 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-        #applescript/bash to change input to increase audio volume 75%
-
-    
-    def pressedpushButton100(self):
-        print ("pushButton100 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-        #applescript/bash to change input to increase audio volume 100%    
-
     def pressedpushButton0(self):
-        print ("pushButton0 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
+        #print ("pushButton0 pressed")
+        subprocess.call("/home/pi/pigui/pushButton0.sh")
         #applescript/bash to change input to set audio volume to 0% 
+
+    def pressedpushButtonVolDown(self):
+        #print ("pushButtonVolDown pressed")
+        subprocess.call("/home/pi/pigui/pushButtonVolDown.sh")
+        #applescript/bash to change input to decrease audio volume
+
+    def pressedpushButtonVolUp(self):
+        #print ("pushButtonVolUp pressed")
+        subprocess.call("/home/pi/pigui/pushButtonVolUp.sh")
+        #applescript/bash to change input to increase audio volume
+
 
 
 
@@ -115,10 +105,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.AirPods.clicked.connect(lambda: self.pressedAirPods())
         self.JBL.clicked.connect(lambda: self.pressedJBL())
         self.FOSI.clicked.connect(lambda: self.pressedFOSI())
-        self.pushButton25.clicked.connect(lambda: self.pressedpushButton25())
-        self.pushButton50.clicked.connect(lambda: self.pressedpushButton50())
-        self.pushButton75.clicked.connect(lambda: self.pressedpushButton75())
-        self.pushButton100.clicked.connect(lambda: self.pressedpushButton100())
+        self.pushButtonVolDown.clicked.connect(lambda: self.pressedpushButtonVolDown())
+        self.pushButtonVolUp.clicked.connect(lambda: self.pressedpushButtonVolUp()
         self.pushButton0.clicked.connect(lambda: self.pressedpushButton0())
         self.nextsong.clicked.connect(lambda: self.pressednextsong())
         self.prevsong.clicked.connect(lambda: self.pressedprevsong())
