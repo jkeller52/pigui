@@ -23,8 +23,8 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #pausebtn.sh works as a play/pause reverse switch
 
     def pressedbtnOffpause(self):
-        print ("Pressed Off!")
-        subprocess.call("/home/pi/pigui/pausebtn.sh")
+        #print ("Pressed Off!")
+        subprocess.call("/home/pi/pigui/pause.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
     def pressedprevsong(self):
