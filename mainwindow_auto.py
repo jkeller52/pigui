@@ -281,10 +281,10 @@ class Ui_MainWindow(object):
         self.action2_0.setObjectName("action2_0")
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
-        self.toolBox_2.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(2)
+        self.toolBox_2.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(0)
-        self.toolBox_3.setCurrentIndex(2)
+        self.toolBox_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

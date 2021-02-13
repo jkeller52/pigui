@@ -13,4 +13,3 @@ if (MyList contains "Spotify") is true then
 	end tell
 end if
 EOD
-

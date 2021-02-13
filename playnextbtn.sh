@@ -1,5 +1,4 @@
 #!/bin/bash
-
 osascript <<EOD
 tell application "System Events"
 	set MyList to (name of every process)
@@ -8,5 +7,3 @@ if (MyList contains "Spotify") is true then
 	tell application "Spotify" to next track
 end if
 EOD
-
-
