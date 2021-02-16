@@ -1,6 +1,4 @@
 import tinytuya
-
-
 ####NOT DONE YET
 import time
 
