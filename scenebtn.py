@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-    #RGB Bulb Device
 import tinytuya
 import time
 
