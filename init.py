@@ -89,6 +89,24 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         subprocess.call("/home/pi/pigui/VolUp.sh")
         #applescript/bash to change input to increase audio volume
 
+    def pressedRed(self):
+        subprocess.call("home/pi/pigui/red.sh")
+
+    def pressedOn(self):
+        subprocess.call("home/pi/pigui/on.sh")
+
+    def pressedOff(self):
+        subprocess.call("home/pi/pigui/off.sh")
+
+    def Scene(self):
+        subprocess.call("home/pi/pigui/scene.sh")
+
+    def White(self):
+        subprocess.call("home/pi/pigui/white.sh")
+
+    def Colour(self):
+        subprocess.call("home/pi/pigui/colour.sh")
+
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
@@ -108,6 +126,13 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.Mute.clicked.connect(lambda: self.pressedMute())
         self.nextsong.clicked.connect(lambda: self.pressednextsong())
         self.prevsong.clicked.connect(lambda: self.pressedprevsong())
+        self.Red.clicked.connect(lambda: self.pressedRed())
+        self.On.clicked.connect(lambda: self.pressedOn())
+        self.Off.clicked.connect(lambda: self.pressedOff())
+        self.Scene.clicked.connect(lambda: self.pressedScene())
+        self.White.clicked.connect(lambda: self.pressedWhite())
+        self.Colour.clicked.connect(lambda: self.pressedColour())
+
         ## Add toolbar and items
         
     def pressedInput(self):
