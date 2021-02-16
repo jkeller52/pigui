@@ -23,7 +23,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #pausebtn.sh works as a play/pause reverse switch
 
     def pressedbtnOffpause(self):
-        #print ("Pressed Off!")
+        print ("Pressed Off!")
         subprocess.call("/home/pi/pigui/pause.sh")
         #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
@@ -46,28 +46,11 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         print ("HDMI")
         subprocess.call("/home/pi/pigui/btn2.sh")
 
-    def pressedtext1(self):
-        print ("text 1 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-
-    def pressedtext2(self):
-        print ("text 2 pressed")
-       #subprocess.call("/home/pi/pigui/***.sh")
-
-    def pressedtext3(self):
-        print ("text 3 pressed")
-        #subprocess.call("/home/pi/pigui/***.sh")
-
     def pressedAirPods(self):
         print ("AirPods pressed")
         subprocess.call("/home/pi/pigui/airpods.sh")
         #applescript/bash to change input to airpods
         #these inputs probably still need work
-
-    def pressedJBL(self):
-        print ("JBL pressed")
-        subprocess.call("/home/pi/pigui/jbl.sh")
-        #applescript/bash to change input to JBL Charge 3
 
     def pressedFOSI(self):
         print ("FOSI pressed")
@@ -98,13 +81,13 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     def pressedOff(self):
         subprocess.call("home/pi/pigui/off.sh")
 
-    def Scene(self):
+    def pressedScene(self):
         subprocess.call("home/pi/pigui/scene.sh")
 
-    def White(self):
+    def pressedWhite(self):
         subprocess.call("home/pi/pigui/white.sh")
 
-    def Colour(self):
+    def pressedColour(self):
         subprocess.call("home/pi/pigui/colour.sh")
 
     def __init__(self):
@@ -115,11 +98,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.btnOffpause.clicked.connect(lambda: self.pressedbtnOffpause())
         self.DP.clicked.connect(lambda: self.pressedDP())
         self.HDMI.clicked.connect(lambda: self.pressedHDMI())
-        self.text1.clicked.connect(lambda: self.pressedtext1())
-        self.text2.clicked.connect(lambda: self.pressedtext2())
-        self.text3.clicked.connect(lambda: self.pressedtext3())
         self.AirPods.clicked.connect(lambda: self.pressedAirPods())
-        self.JBL.clicked.connect(lambda: self.pressedJBL())
         self.FOSI.clicked.connect(lambda: self.pressedFOSI())
         self.VolDown.clicked.connect(lambda: self.pressedVolDown())
         self.VolUp.clicked.connect(lambda: self.pressedVolUp())

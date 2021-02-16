@@ -79,7 +79,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="Controls">
        <property name="geometry">
@@ -208,8 +208,8 @@ border-color: rgb(0, 0, 0);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>100</width>
-         <height>30</height>
+         <width>311</width>
+         <height>221</height>
         </rect>
        </property>
        <attribute name="label">
@@ -503,7 +503,7 @@ border-color: rgb(0, 0, 0);</string>
        </size>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider">
+     <widget class="QSlider" name="dresserSlider">
       <property name="geometry">
        <rect>
         <x>130</x>
@@ -566,7 +566,7 @@ border-color: rgb(0, 0, 0);</string>
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="colour">
+     <widget class="QPushButton" name="Colour">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -594,7 +594,7 @@ border-color: rgb(0, 0, 0);</string>
        </size>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_2">
+     <widget class="QSlider" name="leftSlider">
       <property name="geometry">
        <rect>
         <x>130</x>
