@@ -1,6 +1,5 @@
 import tinytuya
 import time
-export PATH=/bin:/usr/bin:/usr/local/bin
 
 
 d = tinytuya.BulbDevice('ebf378c4d0e31c2d91ex42', '192.168.0.11', '8262aa6bb1eb82f8')
