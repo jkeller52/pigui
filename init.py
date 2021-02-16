@@ -73,22 +73,22 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #applescript/bash to change input to increase audio volume
 
     def pressedRed(self):
-        subprocess.call("home/pi/pigui/red.sh")
+        subprocess.call("/home/pi/pigui/red.sh")
 
     def pressedOn(self):
-        subprocess.call("home/pi/pigui/on.sh")
+        subprocess.call("/home/pi/pigui/on.sh")
 
     def pressedOff(self):
-        subprocess.call("home/pi/pigui/off.sh")
+        subprocess.call("/home/pi/pigui/off.sh")
 
     def pressedScene(self):
-        subprocess.call("home/pi/pigui/scene.sh")
+        subprocess.call("/home/pi/pigui/scene.sh")
 
     def pressedWhite(self):
-        subprocess.call("home/pi/pigui/white.sh")
+        subprocess.call("/home/pi/pigui/white.sh")
 
     def pressedColour(self):
-        subprocess.call("home/pi/pigui/colour.sh")
+        subprocess.call("/home/pi/pigui/colour.sh")
 
     def __init__(self):
         super(self.__class__, self).__init__()
