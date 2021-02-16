@@ -6,7 +6,7 @@ import subprocess #for calling bas scripts
 import PyQt5 # This gets the Qt stuff for the GUI
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget, QSlider
 from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
 
@@ -90,6 +90,9 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     def pressedColour(self):
         subprocess.call("/home/pi/pigui/colour.sh")
 
+    def pressedInput(self):
+        print("Input Tab Selected")
+
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self) # gets defined in the UI file
@@ -113,12 +116,22 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.Colour.clicked.connect(lambda: self.pressedColour())
 
         ## Add toolbar and items
-        
-    def pressedInput(self):
-    	print("Input Tab Selected")
 
-    def pressedtest1(self):
-    	print('test1 tab selected')
+
+#Horizontal Slider
+    def __init__(self):
+        super().__init__()
+
+        mySlider = QSlider(Qt.Horizontal, self)
+        mySlider.setGeometry(30, 40, 200, 30)
+        mySlider.valueChanged[int].connect(self.changeValue)
+
+        self.setGeometry(50,50,320,200)
+        self.setWindowTitle("Checkbox Example")
+        self.show()
+
+    def changeValue(self, value):
+        print(value)
 
 
     #toolbox = QToolBox()
