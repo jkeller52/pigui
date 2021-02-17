@@ -157,3 +157,8 @@ export PATH=/bin:/usr/bin:/usr/local/bin
 
 
 
+
+New features added: smart lights control
+
+new problem: filenotfound errors popping up... then once im past them it wont let me use tinytuya module...
+Think i forgot to import tinytuya into init.py
