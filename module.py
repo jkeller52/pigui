@@ -1,3 +1,8 @@
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+
+
+
 # create class for our Raspberry Pi GUI
 class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     # access variables inside of the UI's file
