@@ -10,6 +10,7 @@ from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
 import tinytuya
 import module
+from module import QMainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow)
 
 def __init__(self):
     super(self.__class__, self).__init__()
