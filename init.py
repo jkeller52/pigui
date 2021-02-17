@@ -82,7 +82,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         subprocess.call("/home/pi/pigui/Off.sh")
 
     def pressedScene(self):
-        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/scene.sh")
+        subprocess.call("/home/pi/pigui/scene.sh")
 
     def pressedWhite(self):
         subprocess.call("/home/pi/pigui/white.sh")
