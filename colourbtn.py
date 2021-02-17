@@ -6,7 +6,7 @@ d = tinytuya.BulbDevice('ebf378c4d0e31c2d91ex42', '192.168.0.11', '8262aa6bb1eb8
 d.set_version(3.3)  # IMPORTANT to set this regardless of version
 data = d.status()
 d.set_mode(mode='white') # white, colour, scene, music
-set_brightness_percentage(brightness=20)
+d.set_brightness_percentage(brightness=20)
 
 
 #rightlamp
