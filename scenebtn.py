@@ -12,7 +12,7 @@ r = tinytuya.BulbDevice('ebc74c1258aca41c1d3pvu', '192.168.0.238', '84c567028844
 r.set_version(3.3)  # IMPORTANT to set this regardless of version
 rdata = r.status()
 r.set_mode(mode='scene') # white, colour, scene, music
-time.sleep(2)
+#time.sleep(2)
 
 #leftlamp
 l = tinytuya.BulbDevice('eb71194515a20f5c11qxac', '192.168.0.29', 'e94a74a5ab6cd3f7')
