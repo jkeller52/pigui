@@ -1,5 +1,4 @@
 #init.py(main substitute), is basically main 
-
 import sys
 import os
 import subprocess #for calling bas scripts
@@ -9,6 +8,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidget, QSlider
 from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
+import tinytuya
 
  
 # create class for our Raspberry Pi GUI
@@ -79,10 +79,10 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         subprocess.call("/home/pi/pigui/on.sh")
 
     def pressedOff(self):
-        subprocess.call("/home/pi/pigui/off.sh")
+        subprocess.call("/home/pi/pigui/Off.sh")
 
     def pressedScene(self):
-        subprocess.call("/home/pi/pigui/scene.sh")
+        subprocess.call("/Users/jacobkeller/Documents/GitHub/pigui/scene.sh")
 
     def pressedWhite(self):
         subprocess.call("/home/pi/pigui/white.sh")
@@ -119,19 +119,19 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
 
 
 #Horizontal Slider
-    def __init__(self):
-        super().__init__()
+  #  def __init__(self):
+   #     super().__init__()
 
-        mySlider = QSlider(horizontalSlider1.Horizontal, self)
-        mySlider.setGeometry(30, 40, 200, 30)
-        mySlider.valueChanged[int].connect(self.changeValue)
+    #    mySlider = QSlider(horizontallider1.Horizontal, self)
+    #    mySlider.setGeometry(30, 40, 200, 30)
+    #    mySlider.valueChanged[int].connect(self.changeValue)
 
-        self.setGeometry(50,50,320,200)
-        self.setWindowTitle("Checkbox Example")
-        self.show()
+    #    self.setGeometry(50,50,320,200)
+    #    self.setWindowTitle("Checkbox Example")
+    #    self.show()
 
-    def changeValue(self, value):
-        print(value)
+    #def changeValue(self, value):
+    #    print(value)
 
 
     #toolbox = QToolBox()
@@ -143,8 +143,6 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         #label = QLabel()
         #toolbox.addItem(label, "Directors")
 
- 
-# I feel better having one of these
 def main():
  # a new app instance
  app = QApplication(sys.argv)
