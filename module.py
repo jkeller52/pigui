@@ -1,54 +1,78 @@
-#module.py
-### functions for the buttons to call
-def pressedbtnOnplay(self):
-	subprocess.call("/home/pi/pigui/pause.sh")
+# create class for our Raspberry Pi GUI
+class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
+    # access variables inside of the UI's file
 
-def pressedbtnOffpause(self):
-	subprocess.call("/home/pi/pigui/pause.sh")
+    ### functions for the buttons to call
+    def pressedbtnOnplay(self):
+        print ("Pressed On!")
+        subprocess.call("/home/pi/pigui/pause.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/playbtn.sh") #uncommenting local path to pigui folder enables local gui testing
+        #pausebtn.sh works as a play/pause reverse switch
 
-def pressedprevsong(self):
-	subprocess.call("/home/pi/pigui/playprev.sh")
+    def pressedbtnOffpause(self):
+        print ("Pressed Off!")
+        subprocess.call("/home/pi/pigui/pause.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/pausebtn.sh")
 
-def pressednextsong(self):
-	subprocess.call("/home/pi/pigui/playnext.sh")
+    def pressedprevsong(self):
+        print ("prevsong pressed")
+        subprocess.call("/home/pi/pigui/playprev.sh")
+        #applescript/bash to change the song to the previous one (Spotify-based)
 
-def pressedDP(self):
-	print ("DP")
-	subprocess.call("/home/pi/pigui/btn1.sh")
+    def pressednextsong(self):
+        print ("nextsong pressed")
+        subprocess.call("/home/pi/pigui/playnext.sh")
+        #applescript/bash to change the song to the next one (Spotify-based)
 
-def pressedHDMI(self):
-	print ("HDMI")
-	subprocess.call("/home/pi/pigui/btn2.sh")
+    def pressedDP(self):
+        print ("DP")
+        subprocess.call("/home/pi/pigui/btn1.sh")
+        #subprocess.call("/users/jacobkeller/documents/github/pigui/btn1.sh")
 
-def pressedAirPods(self):
-	subprocess.call("/home/pi/pigui/airpods.sh")
+    def pressedHDMI(self):
+        print ("HDMI")
+        subprocess.call("/home/pi/pigui/btn2.sh")
 
-def pressedFOSI(self):
-	print ("FOSI pressed")
+    def pressedAirPods(self):
+        print ("AirPods pressed")
+        subprocess.call("/home/pi/pigui/airpods.sh")
+        #applescript/bash to change input to airpods
+        #these inputs probably still need work
 
-def pressedMute(self):
-	subprocess.call("/home/pi/pigui/Mute.sh")
+    def pressedFOSI(self):
+        print ("FOSI pressed")
+        #subprocess.call("/home/pi/pigui/fosi.sh")
+        #applescript/bash to change input to fosi audio
 
-def pressedVolDown(self):
-	subprocess.call("/home/pi/pigui/VolDown.sh")
+    def pressedMute(self):
+        #print ("pushButton0 pressed")
+        subprocess.call("/home/pi/pigui/Mute.sh")
+        #applescript/bash to change input to set audio volume to 0% 
 
-def pressedVolUp(self):
-	subprocess.call("/home/pi/pigui/VolUp.sh")
+    def pressedVolDown(self):
+        #print ("pushButtonVolDown pressed")
+        subprocess.call("/home/pi/pigui/VolDown.sh")
+        #applescript/bash to change input to decrease audio volume
 
-def pressedRed(self):
-	subprocess.call("/home/pi/pigui/red.sh")
+    def pressedVolUp(self):
+        #print ("pushButtonVolUp pressed")
+        subprocess.call("/home/pi/pigui/VolUp.sh")
+        #applescript/bash to change input to increase audio volume
 
-def pressedOn(self):
-	subprocess.call("/home/pi/pigui/on.sh")
+    def pressedRed(self):
+        subprocess.call("/home/pi/pigui/red.sh")
 
-def pressedOff(self):
-	subprocess.call("/home/pi/pigui/Off.sh")
+    def pressedOn(self):
+        subprocess.call("/home/pi/pigui/on.sh")
 
-def pressedScene(self):
-	subprocess.call("/home/pi/pigui/scene.sh")
+    def pressedOff(self):
+        subprocess.call("/home/pi/pigui/Off.sh")
 
-def pressedWhite(self):
-	subprocess.call("/home/pi/pigui/white.sh")
+    def pressedScene(self):
+        subprocess.call("/home/pi/pigui/scene.sh")
 
-def pressedColour(self):
-	subprocess.call("/home/pi/pigui/colour.sh")
+    def pressedWhite(self):
+        subprocess.call("/home/pi/pigui/white.sh")
+
+    def pressedColour(self):
+        subprocess.call("/home/pi/pigui/colour.sh")

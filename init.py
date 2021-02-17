@@ -11,32 +11,27 @@ import mainwindow_auto    # This is our window from QtCreator
 import tinytuya
 import module
 
- 
-# create class for our Raspberry Pi GUI
-class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
-    # access variables inside of the UI's file
-
-    def __init__(self):
-        super(self.__class__, self).__init__()
-        self.setupUi(self) # gets defined in the UI file
-        ### Hooks to for buttons
-        self.btnOnplay.clicked.connect(lambda: self.module(pressedbtnOnplay()))
-        self.btnOffpause.clicked.connect(lambda: self.module(pressedbtnOffpause()))
-        self.DP.clicked.connect(lambda: self.module(pressedDP()))
-        self.HDMI.clicked.connect(lambda: self.module(pressedHDMI()))
-        self.AirPods.clicked.connect(lambda: self.pressedAirPods())
-        self.FOSI.clicked.connect(lambda: self.pressedFOSI())
-        self.VolDown.clicked.connect(lambda: self.pressedVolDown())
-        self.VolUp.clicked.connect(lambda: self.pressedVolUp())
-        self.Mute.clicked.connect(lambda: self.pressedMute())
-        self.nextsong.clicked.connect(lambda: self.pressednextsong())
-        self.prevsong.clicked.connect(lambda: self.pressedprevsong())
-        self.Red.clicked.connect(lambda: self.pressedRed())
-        self.On.clicked.connect(lambda: self.pressedOn())
-        self.Off.clicked.connect(lambda: self.pressedOff())
-        self.Scene.clicked.connect(lambda: self.pressedScene())
-        self.White.clicked.connect(lambda: self.pressedWhite())
-        self.Colour.clicked.connect(lambda: self.pressedColour())
+def __init__(self):
+    super(self.__class__, self).__init__()
+    self.setupUi(self) # gets defined in the UI file
+    ### Hooks to for buttons
+    self.btnOnplay.clicked.connect(lambda: self.module(pressedbtnOnplay()))
+    self.btnOffpause.clicked.connect(lambda: self.module(pressedbtnOffpause()))
+    self.DP.clicked.connect(lambda: self.module(pressedDP()))
+    self.HDMI.clicked.connect(lambda: self.module(pressedHDMI()))
+    self.AirPods.clicked.connect(lambda: self.pressedAirPods())
+    self.FOSI.clicked.connect(lambda: self.pressedFOSI())
+    self.VolDown.clicked.connect(lambda: self.pressedVolDown())
+    self.VolUp.clicked.connect(lambda: self.pressedVolUp())
+    self.Mute.clicked.connect(lambda: self.pressedMute())
+    self.nextsong.clicked.connect(lambda: self.pressednextsong())
+    self.prevsong.clicked.connect(lambda: self.pressedprevsong())
+    self.Red.clicked.connect(lambda: self.pressedRed())
+    self.On.clicked.connect(lambda: self.pressedOn())
+    self.Off.clicked.connect(lambda: self.pressedOff())
+    self.Scene.clicked.connect(lambda: self.pressedScene())
+    self.White.clicked.connect(lambda: self.pressedWhite())
+    self.Colour.clicked.connect(lambda: self.pressedColour())
 
         ## Add toolbar and items
 
