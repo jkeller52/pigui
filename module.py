@@ -1,6 +1,5 @@
+import PyQt5
 from PyQt5.QtWidgets import QApplication, QMainWindow
-
-
 
 
 # create class for our Raspberry Pi GUI
