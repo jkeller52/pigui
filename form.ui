@@ -607,7 +607,7 @@ border-color: rgb(0, 0, 0);</string>
        <enum>Qt::Horizontal</enum>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_3">
+     <widget class="QSlider" name="horizontalSlider1">
       <property name="geometry">
        <rect>
         <x>130</x>
@@ -648,7 +648,7 @@ border-color: rgb(0, 0, 0);</string>
        </size>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider_4">
+     <widget class="QSlider" name="horizontalSlider2">
       <property name="geometry">
        <rect>
         <x>130</x>

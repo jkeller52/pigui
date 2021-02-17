@@ -122,7 +122,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
     def __init__(self):
         super().__init__()
 
-        mySlider = QSlider(Qt.Horizontal, self)
+        mySlider = QSlider(horizontalSlider1.Horizontal, self)
         mySlider.setGeometry(30, 40, 200, 30)
         mySlider.valueChanged[int].connect(self.changeValue)
 
