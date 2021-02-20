@@ -9,7 +9,6 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QStackedWidg
 from PyQt5.QtCore import pyqtSlot
 import mainwindow_auto    # This is our window from QtCreator
 import tinytuya
-<<<<<<< HEAD
 import module
 from module import QMainWindow
 
