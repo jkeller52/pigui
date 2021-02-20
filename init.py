@@ -33,7 +33,7 @@ def __init__(self):
     self.Scene.clicked.connect(lambda: self.pressedScene())
     self.White.clicked.connect(lambda: self.pressedWhite())
     self.Colour.clicked.connect(lambda: self.pressedColour())
-=======
+
 
  
 # create class for our Raspberry Pi GUI
@@ -139,7 +139,7 @@ class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
         self.Scene.clicked.connect(lambda: self.pressedScene())
         self.White.clicked.connect(lambda: self.pressedWhite())
         self.Colour.clicked.connect(lambda: self.pressedColour())
->>>>>>> parent of 5138138 (testing using a module for init.py's functions)
+
 
         ## Add toolbar and items
 
