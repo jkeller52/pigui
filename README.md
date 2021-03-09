@@ -1,10 +1,17 @@
 # piGUI
-piGUI is an open-source automation project meant to enable beginner programmers and hobbyists to turn a Raspberry-Pi into a functional touchscreen that can run programs on either device, or an unlimited number of IoT applications (smart lights, speakers/Spotify API, changing monitor inputs; you could   . Using a few simple python and bash scripts, you can make a multi-page graphical interface.
+piGUI is an open-source automation project meant to enable beginner programmers and hobbyists to turn a Raspberry-Pi into a functional touchscreen that can run control various IoT devices (smart lights, speakers/Spotify API, changing monitor inputs, etc). Using a few simple python and bash scripts, you can make a multi-page graphical interface 
 
 
 
-Examples/Inspiriation
 
+
+
+
+
+
+
+
+#Tutorial
 
 Follow this: 
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
