@@ -1,9 +1,16 @@
 # piGUI
-piGUI is an open-source automation project meant to enable beginner programmers and hobbyists to turn a Raspberry-Pi into a functional touchscreen that can run control various IoT devices (smart lights, speakers/Spotify API, changing monitor inputs, etc). Using a few simple python and bash scripts, you can make a multi-page graphical interface 
+piGUI is an open-source automation project meant to enable beginner programmers and hobbyists to turn a Raspberry-Pi into a touchscreen Graphical User Interface (GUI) that can run control various IoT devices (smart lights, speakers/Spotify API, changing monitor inputs, etc). 
+
+Using a few simple python and bash scripts, you can make a multi-page graphical interface using PyQt5, a variant of Qt Creator GUI software. This tutorial will use PyQt5 to generate boilerplate code for GUI elements, perfect for reducing load on beginner programmers interested in simple GUI applicatitons. 
 
 
+A 3.5" Waveshare TFT LCD Touchscreen is connected to a Raspberry Pi 3 Model B via GPIO shield
 
 
+Requirements:
+- 3.5" Raspberry Pi TFT LCD Touchscreen with Raspian
+- Python 3
+- 
 
 
 
@@ -13,10 +20,15 @@ piGUI is an open-source automation project meant to enable beginner programmers 
 
 #Tutorial
 
+This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow this tutorial: https://www.raspberrypi.org/documentation/installation/installing-images/
+
+
+#Configuring the Touchscreen
 Follow this: 
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
 
+#Downloading 
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
@@ -52,7 +64,7 @@ not sure how to configure this to stay.
 #Tested adding '@' before "sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh" in "/etc/xdg/lxsession/LXDE-pi/autostart".
 This might have fixed the issue. Rebooting again to see if calibration changes.
 
-
+#Configuring SSH keys for communication between Pi and main device (Optional)
 
 to enable ssh from the pi to the computer so we can skip being prompted for a password (allows us to automate some gui functions being performed better):
 pi@raspberrypi: ssh-keygen -t rsa
@@ -65,7 +77,7 @@ On both the pi and other device:
 chmod 0700 ~/.ssh
 
 
-on the mac os x:
+on the mac osx:
 sudo chown jacobkeller .ssh
 sudo chown jacobkeller .ssh/authorized_keys
 
