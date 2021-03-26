@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>460</height>
+    <width>460</width>
+    <height>320</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>320</width>
-    <height>470</height>
+    <width>460</width>
+    <height>320</height>
    </size>
   </property>
   <property name="font">
@@ -41,9 +41,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
-      <width>321</width>
-      <height>391</height>
+      <y>0</y>
+      <width>461</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="font">
@@ -58,8 +58,169 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
+    <widget class="QWidget" name="Lights">
+     <attribute name="title">
+      <string>Lights</string>
+     </attribute>
+     <widget class="QPushButton" name="On">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(9, 5, 3);</string>
+      </property>
+      <property name="text">
+       <string>On</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Scene">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>130</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(4, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>Scene</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Off">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(9, 5, 3);</string>
+      </property>
+      <property name="text">
+       <string>Off</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Red">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>130</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(4, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>Red</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Colour">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>130</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(4, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>Color</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="White">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(4, 1, 1);</string>
+      </property>
+      <property name="text">
+       <string>White</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="MusicTab">
      <attribute name="title">
       <string>Music</string>
@@ -67,10 +228,10 @@
      <widget class="QToolBox" name="toolBox_2">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>311</width>
-        <height>301</height>
+        <x>20</x>
+        <y>10</y>
+        <width>411</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="font">
@@ -79,15 +240,15 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Controls">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>311</width>
-         <height>221</height>
+         <width>411</width>
+         <height>131</height>
         </rect>
        </property>
        <attribute name="label">
@@ -96,7 +257,7 @@
        <widget class="QPushButton" name="btnOnplay">
         <property name="geometry">
          <rect>
-          <x>80</x>
+          <x>120</x>
           <y>0</y>
           <width>162</width>
           <height>57</height>
@@ -118,8 +279,8 @@
        <widget class="QPushButton" name="btnOffpause">
         <property name="geometry">
          <rect>
-          <x>80</x>
-          <y>140</y>
+          <x>120</x>
+          <y>60</y>
           <width>162</width>
           <height>57</height>
          </rect>
@@ -141,7 +302,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>70</y>
+          <y>30</y>
           <width>111</width>
           <height>61</height>
          </rect>
@@ -163,8 +324,8 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="nextsong">
         <property name="geometry">
          <rect>
-          <x>200</x>
-          <y>70</y>
+          <x>290</x>
+          <y>30</y>
           <width>111</width>
           <height>61</height>
          </rect>
@@ -208,8 +369,8 @@ border-color: rgb(0, 0, 0);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>311</width>
-         <height>221</height>
+         <width>411</width>
+         <height>131</height>
         </rect>
        </property>
        <attribute name="label">
@@ -218,8 +379,8 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="Mute">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>110</y>
+          <x>200</x>
+          <y>30</y>
           <width>171</width>
           <height>61</height>
          </rect>
@@ -236,10 +397,10 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="VolDown">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>10</y>
-          <width>91</width>
-          <height>91</height>
+          <x>40</x>
+          <y>60</y>
+          <width>131</width>
+          <height>71</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -254,10 +415,10 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="VolUp">
         <property name="geometry">
          <rect>
-          <x>190</x>
-          <y>10</y>
-          <width>91</width>
-          <height>91</height>
+          <x>40</x>
+          <y>0</y>
+          <width>131</width>
+          <height>71</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -279,10 +440,10 @@ border-color: rgb(0, 0, 0);</string>
      <widget class="QToolBox" name="toolBox">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>291</width>
-        <height>271</height>
+        <x>20</x>
+        <y>10</y>
+        <width>421</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="font">
@@ -298,8 +459,8 @@ border-color: rgb(0, 0, 0);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>291</width>
-         <height>191</height>
+         <width>421</width>
+         <height>131</height>
         </rect>
        </property>
        <attribute name="label">
@@ -308,7 +469,7 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="DP">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>30</x>
           <y>0</y>
           <width>161</width>
           <height>61</height>
@@ -336,8 +497,8 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="HDMI">
         <property name="geometry">
          <rect>
-          <x>60</x>
-          <y>80</y>
+          <x>200</x>
+          <y>0</y>
           <width>161</width>
           <height>61</height>
          </rect>
@@ -361,8 +522,8 @@ border-color: rgb(0, 0, 0);</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>291</width>
-         <height>191</height>
+         <width>421</width>
+         <height>131</height>
         </rect>
        </property>
        <attribute name="label">
@@ -371,7 +532,7 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="AirPods">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>0</x>
           <y>0</y>
           <width>241</width>
           <height>57</height>
@@ -399,7 +560,7 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="FOSI">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>0</x>
           <y>60</y>
           <width>241</width>
           <height>57</height>
@@ -427,8 +588,8 @@ border-color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="btoff">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>140</y>
+          <x>240</x>
+          <y>0</y>
           <width>141</width>
           <height>57</height>
          </rect>
@@ -447,289 +608,6 @@ border-color: rgb(0, 0, 0);</string>
         </property>
        </widget>
       </widget>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Lights">
-     <attribute name="title">
-      <string>Lights</string>
-     </attribute>
-     <widget class="QPushButton" name="On">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>16</y>
-        <width>131</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>36</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(9, 5, 3);</string>
-      </property>
-      <property name="text">
-       <string>On</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Scene">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>260</y>
-        <width>121</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>24</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(4, 1, 1);</string>
-      </property>
-      <property name="text">
-       <string>Scene</string>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QSlider" name="dresserSlider">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>100</y>
-        <width>160</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Off">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>16</y>
-        <width>131</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>36</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(9, 5, 3);</string>
-      </property>
-      <property name="text">
-       <string>Off</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Red">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>260</y>
-        <width>101</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>24</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(4, 1, 1);</string>
-      </property>
-      <property name="text">
-       <string>Red</string>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Colour">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>260</y>
-        <width>111</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>24</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(4, 1, 1);</string>
-      </property>
-      <property name="text">
-       <string>Color</string>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QSlider" name="leftSlider">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>130</y>
-        <width>160</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider1">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>210</y>
-        <width>160</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="White">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>190</y>
-        <width>101</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>24</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(4, 1, 1);</string>
-      </property>
-      <property name="text">
-       <string>White</string>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider2">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>160</y>
-        <width>160</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>49</x>
-        <y>100</y>
-        <width>71</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Dresser</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>80</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Color Slider</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>49</x>
-        <y>130</y>
-        <width>71</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Left Lamp</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>49</x>
-        <y>160</y>
-        <width>71</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Right Lamp</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>200</y>
-        <width>71</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Brightness</string>
-      </property>
      </widget>
     </widget>
    </widget>
