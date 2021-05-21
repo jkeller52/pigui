@@ -11,7 +11,7 @@ Requirements:
 - 3.5" Raspberry Pi TFT LCD Touchscreen (Waveshare Model B used in this tutorial)
 - Raspberry Pi 3b+ or higher
 - Python 3
-- Terminal/
+- Terminal/Command Line Interface Access
 
 
 
@@ -25,12 +25,15 @@ This tutorial will asume that you are beginning with Raspian, the standard Raspb
 
 
 ##Enabling SSH on the Pi
-
+If you have a fresh install of Raspbian, you'll need to follow this documentation to enable SSH so that we can connect to the Pi from our computer. This makes development easier.
+https://www.raspberrypi.org/documentation/remote-access/ssh/
 
 
 
 ##Connecting to the Raspberry Pi via SSH
+###Using Windows 10 https://www.raspberrypi.org/documentation/remote-access/ssh/windows10.md
 
+###Using MacOS (or Linux) https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
 
 
 ##Configuring the Touchscreen
