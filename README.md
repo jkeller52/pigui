@@ -43,34 +43,42 @@ Follow this:
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
 Open up Terminal application on your Pi. From there:
-'git clone https://github.com/waveshare/LCD-show.git
-cd LCD-show/'
+```
+git clone https://github.com/waveshare/LCD-show.git
+cd LCD-show/
+```
 
 Then run:
-'chmod +x LCD35B-show-V2
- ./LCD35B-show-V2 '
+```
+chmod +x LCD35B-show-V2
+./LCD35B-show-V2 
+ ```
 
 
 The touch function will work after restart. You can set the screen orientation based on how you plan to use your Pi. 
 
 0 degree rotation
-`cd LCD-show
-./LCD35B-show-V2 0`
+```
+cd LCD-show
+./LCD35B-show-V2 0
+```
 
 90 degree rotation
-`cd LCD-show/
-./LCD35B-show-V2 90`
+```
+cd LCD-show/
+./LCD35B-show-V2 90
+```
 
 180 degree rotation
-`cd LCD-show/
-./LCD35B-show-V2 180`
+```
+cd LCD-show/
+./LCD35B-show-V2 180```
 
 270 degree rotation
-`cd LCD-show/
-./LCD35B-show-V2 270`
-
-
-
+```
+cd LCD-show/
+./LCD35B-show-V2 270
+```
 
 
 
@@ -129,8 +137,8 @@ On both the pi and other device:
 
 
 on the mac osx:
-`sudo chown jacobkeller .ssh
-sudo chown jacobkeller .ssh/authorized_keys`
+```sudo chown jacobkeller .ssh
+sudo chown jacobkeller .ssh/authorized_keys```
 
 
 Biggest hurdle with pi SSH --> couldn't get permissions set right to allow the ssh key on the macbook to write. 
