@@ -19,7 +19,7 @@ Requirements:
 
 
 
-#Tutorial
+# Tutorial
 
 This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow this tutorial: https://www.raspberrypi.org/documentation/installation/installing-images/
 
@@ -30,13 +30,13 @@ https://www.raspberrypi.org/documentation/remote-access/ssh/
 
 
 
-##Connecting to the Raspberry Pi via SSH
-###Using Windows 10 https://www.raspberrypi.org/documentation/remote-access/ssh/windows10.md
+## Connecting to the Raspberry Pi via SSH
+### Using Windows 10 https://www.raspberrypi.org/documentation/remote-access/ssh/windows10.md
 
-###Using MacOS (or Linux) https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
+### Using MacOS (or Linux) https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
 
 
-##Configuring the Touchscreen
+## Configuring the Touchscreen
 Follow this: 
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
@@ -44,7 +44,7 @@ https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
 
 
-##Downloading 
+## Downloading 
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
@@ -52,7 +52,7 @@ Now, we will upgrade python setuptools and make sure pip recognizes pyqt5.
 `pip3 install --upgrade setuptools
 pip3 install pyqt5`
 
-#No issues with calibration until this next step. Seems that X-input calibrator is problematic.
+# No issues with calibration until this next step. Seems that X-input calibrator is problematic.
 Running on Startup:
 	https://ozzmaker.com/enable-x-windows-on-piscreen/
   
@@ -74,13 +74,13 @@ then type:
 
 Now, gui should autoboot. 
 
-#Note: touchscreen settings worked this time around. 
+# Note: touchscreen settings worked this time around. 
 not sure how to configure this to stay.
 
 #Tested adding '@' before "sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh" in "/etc/xdg/lxsession/LXDE-pi/autostart".
 This might have fixed the issue. Rebooting again to see if calibration changes.
 
-#Configuring SSH keys for communication between Pi and main device (Optional)
+# Configuring SSH keys for communication between Pi and main device (Optional)
 
 to enable ssh from the pi to the computer so we can skip being prompted for a password (allows us to automate some gui functions being performed better):
 `pi@raspberrypi: ssh-keygen -t rsa`
@@ -143,7 +143,7 @@ subprocess.call"hdmi.sh")
 
 
 
-##I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
+## I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
 #This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
 
 to run a bash file on your computer, you'll need to give it privileges:
