@@ -24,12 +24,24 @@ Requirements:
 This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow this tutorial: https://www.raspberrypi.org/documentation/installation/installing-images/
 
 
-#Configuring the Touchscreen
+##Enabling SSH on the Pi
+
+
+
+
+##Connecting to the Raspberry Pi via SSH
+
+
+
+##Configuring the Touchscreen
 Follow this: 
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
 
-#Downloading 
+
+
+
+##Downloading 
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
@@ -182,3 +194,9 @@ New features added: smart lights control
 
 new problem: filenotfound errors popping up... then once im past them it wont let me use tinytuya module...
 Think i forgot to import tinytuya into init.py
+
+
+
+------
+v2: SSH'ing into Windows
+
