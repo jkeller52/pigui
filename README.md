@@ -36,15 +36,50 @@ https://www.raspberrypi.org/documentation/remote-access/ssh/
 ### Using MacOS (or Linux) https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
 
 
+
+
 ## Configuring the Touchscreen
 Follow this: 
 https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
 
+Open up Terminal application on your Pi. From there:
+'git clone https://github.com/waveshare/LCD-show.git
+cd LCD-show/'
+
+Then run:
+'chmod +x LCD35B-show-V2
+ ./LCD35B-show-V2 '
+
+
+The touch function will work after restart. You can set the screen orientation based on how you plan to use your Pi. 
+
+0 degree rotation
+`cd LCD-show
+./LCD35B-show-V2 0`
+
+90 degree rotation
+`cd LCD-show/
+./LCD35B-show-V2 90`
+
+180 degree rotation
+`cd LCD-show/
+./LCD35B-show-V2 180`
+
+270 degree rotation
+`cd LCD-show/
+./LCD35B-show-V2 270`
 
 
 
 
-## Downloading 
+
+
+
+# Graphical User Interface (GUI) Creation 
+Now, we will follow steps to create a functional user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
+
+
+##Downloading PyQt5 
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
