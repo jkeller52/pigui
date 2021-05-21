@@ -72,14 +72,15 @@ cd LCD-show/
 180 degree rotation
 ```
 cd LCD-show/
-./LCD35B-show-V2 180```
+./LCD35B-show-V2 180
+```
 
 270 degree rotation
+
 ```
 cd LCD-show/
 ./LCD35B-show-V2 270
 ```
-
 
 
 
@@ -92,8 +93,10 @@ Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
 Now, we will upgrade python setuptools and make sure pip recognizes pyqt5. 
-`pip3 install --upgrade setuptools
-pip3 install pyqt5`
+```
+pip3 install --upgrade setuptools
+pip3 install pyqt5
+```
 
 # No issues with calibration until this next step. Seems that X-input calibrator is problematic.
 Running on Startup:
@@ -137,8 +140,10 @@ On both the pi and other device:
 
 
 on the mac osx:
-```sudo chown jacobkeller .ssh
-sudo chown jacobkeller .ssh/authorized_keys```
+```
+sudo chown jacobkeller .ssh
+sudo chown jacobkeller .ssh/authorized_keys
+```
 
 
 Biggest hurdle with pi SSH --> couldn't get permissions set right to allow the ssh key on the macbook to write. 
@@ -172,17 +177,21 @@ https://stackoverflow.com/questions/13745648/running-bash-script-from-within-pyt
 Now we need to tell the python script controlling the gui to call the bash script when the button of choice is pressed. For this we'll use subprocess:
 
 Example: 
+```
 import subprocess
 print "start"
 subprocess.call("sleep.sh")
 print "end"
+```
 
 
 
 
 Code I used: 
+```
 import subprocess
 subprocess.call"hdmi.sh")
+```
 
 
 
@@ -193,9 +202,11 @@ to run a bash file on your computer, you'll need to give it privileges:
 `chmod +x script-name-here.sh`
 
 so far:
-`chmod +x hdmi.sh
+```
+chmod +x hdmi.sh
 chmod +x redirect.sh
 chmod +x btn1.sh`
+```
 
 make sure to change in the directory before settting permissions with chmod +x:
 `cd /github/pigui`
