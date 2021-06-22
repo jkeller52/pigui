@@ -1,8 +1,9 @@
 # This Python file uses the following encoding: utf-8
 import sys
 import os
+import flask
 
-
+from flask import flask
 from PySide2.QtWidgets import QApplication, QMainWindow
 from PySide2.QtCore import QFile
 from PySide2.QtUiTools import QUiLoader
