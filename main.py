@@ -2,7 +2,6 @@
 import sys
 import os
 import flask
-
 from flask import flask
 from PySide2.QtWidgets import QApplication, QMainWindow
 from PySide2.QtCore import QFile

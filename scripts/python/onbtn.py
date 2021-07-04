@@ -1,5 +1,4 @@
 import tinytuya
-####NOT DONE YET
 import time
 
 d = tinytuya.BulbDevice('ebf378c4d0e31c2d91ex42', '192.168.0.11', '8262aa6bb1eb82f8')
@@ -23,7 +22,7 @@ l.set_mode(mode='white') # white, colour, scene, music
 set_brightness(75)
 
 
- #BulbDevice
+ #BulbDevice Documentation
   #      set_colour(r, g, b):
   #      set_white(brightness, colourtemp):
   #      set_white_percentage(brightness=100, colourtemp=0):

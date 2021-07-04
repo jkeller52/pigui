@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+#Applescript - won't work for Windows 10
 #runs AppleScript to play/pause music
 osascript <<EOD
 tell application "System Events"

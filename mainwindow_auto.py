@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainwindow.ui'
+# Form implementation generated from reading ui file 'form.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -141,7 +141,7 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
         self.toolBox_2.addItem(self.Controls, "")
         self.Volume = QtWidgets.QWidget()
-        self.Volume.setGeometry(QtCore.QRect(0, 0, 100, 30))
+        self.Volume.setGeometry(QtCore.QRect(0, 0, 411, 131))
         self.Volume.setObjectName("Volume")
         self.Mute = QtWidgets.QPushButton(self.Volume)
         self.Mute.setGeometry(QtCore.QRect(200, 30, 171, 61))
@@ -213,14 +213,6 @@ class Ui_MainWindow(object):
         self.FOSI.setStyleSheet("color: rgb(4, 1, 1);")
         self.FOSI.setIconSize(QtCore.QSize(32, 32))
         self.FOSI.setObjectName("FOSI")
-        self.btoff = QtWidgets.QPushButton(self.page_10)
-        self.btoff.setGeometry(QtCore.QRect(240, 0, 141, 57))
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(36)
-        self.btoff.setFont(font)
-        self.btoff.setStyleSheet("color: rgb(9, 5, 3);")
-        self.btoff.setObjectName("btoff")
         self.toolBox.addItem(self.page_10, "")
         self.tabWidget.addTab(self.inputs, "")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -231,7 +223,7 @@ class Ui_MainWindow(object):
         self.action2_0.setObjectName("action2_0")
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         self.toolBox_2.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -261,7 +253,6 @@ class Ui_MainWindow(object):
         self.toolBox.setItemText(self.toolBox.indexOf(self.video), _translate("MainWindow", "Video"))
         self.AirPods.setText(_translate("MainWindow", "AirPods"))
         self.FOSI.setText(_translate("MainWindow", "FOSI"))
-        self.btoff.setText(_translate("MainWindow", "BT Off"))
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_10), _translate("MainWindow", "Audio"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.inputs), _translate("MainWindow", "Inputs"))
         self.action2_0.setText(_translate("MainWindow", "2.0"))

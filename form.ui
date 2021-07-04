@@ -58,7 +58,7 @@
      <string notr="true">color: rgb(22, 22, 57);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Lights">
      <attribute name="title">
@@ -452,7 +452,7 @@ border-color: rgb(0, 0, 0);</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="video">
        <property name="geometry">
@@ -583,28 +583,6 @@ border-color: rgb(0, 0, 0);</string>
           <width>32</width>
           <height>32</height>
          </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btoff">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>0</y>
-          <width>141</width>
-          <height>57</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Arial</family>
-          <pointsize>36</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(9, 5, 3);</string>
-        </property>
-        <property name="text">
-         <string>BT Off</string>
         </property>
        </widget>
       </widget>
