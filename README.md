@@ -14,10 +14,10 @@ Requirements:
 - Terminal/Command Line Interface Access
 
 Table of Contents:
-- [Operating System and Configuration]()
-- [Touchscreen Configuration]()
+- [Operating System and Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#operating-system-and-configuration)
+- [Touchscreen Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#touchscreen-configuration)
 - [Graphical User Interface (GUI) Creation]()
-- [Configuring SSH Keys]()
+- [Configuring SSH Keys](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-ssh-keys)
 - [Configuring Python/Bash Files]()
 
 
