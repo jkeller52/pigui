@@ -13,7 +13,12 @@ Requirements:
 - Python 3
 - Terminal/Command Line Interface Access
 
-
+Table of Contents:
+- Operating System and Configuration
+- Touchscreen Configuration
+- Graphical User Interface (GUI) Creation
+- Configuring SSH Keys
+- Configuring Python/Bash Files
 
 
 
@@ -35,7 +40,7 @@ Below are links to the official Raspberry Pi documentation to connect via SSH.
 [Using MacOS (or Linux)](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md)
 
 
-## Configuring the Touchscreen
+## Touchscreen Configuration
 For the purposes of this tutorial, Waveshare's 3.5inch Raspberry Pi LCD (B) was used. Your touchscreen documentation may differ.
 [Official Waveshare Documentation](https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image)
 
@@ -121,7 +126,7 @@ This might have fixed the issue. Rebooting again to see if calibration changes.
 
 
 
-## Configuring SSH keys for communication between Pi and main device (Optional)
+## Configuring SSH Keys for communication between Pi and main device (Optional)
 In order to seamlessly automate GUI functions, we will need to configure SSH keys so that the Pi can access and execute bash scripts on our primary device.
 
 to enable ssh from the pi to the computer:
@@ -208,7 +213,7 @@ This also may be required when testing/using bash scripts on the pi. use this an
 
 Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the Pi.
 
-## Setting up Scripts
+## Configuring Python/Bash Files
 
 create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
 This is what I used:
