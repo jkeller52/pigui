@@ -128,7 +128,7 @@ This might have fixed the issue. Rebooting again to see if calibration changes.
 The architecture supporting the application will work as follows:
 - The Python GUI recognizes when buttons are pressed
 - The init.py file underlying the GUI includes functions run to bash (.sh) scripts on the pi for each button push
-- The bash scripts on the pi include code which triggers an ssh connection into the development device/computer using ssh keys and executes a Python file according to which button was pressed
+- The bash scripts on the pi include code which triggers an ssh connection into the development device/computer using ssh keys and executes a different bash file according to which button was pressed. This bash file runs an associated Python script to achieve the desired outcome of the button press.
 
 The Python file executed on the main device will trigger the action desired, bypassing limitations of the Raspberry Pi and using it as a simple command-and-control system to automate tasks that are ran through your main device. On my Mac OSX device, this also allowed me to use AppleScript commands to interact with my devices. 
 
