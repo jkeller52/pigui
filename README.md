@@ -16,7 +16,7 @@ Requirements:
 Table of Contents:
 - [Operating System and Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#operating-system-and-configuration)
 - [Touchscreen Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#touchscreen-configuration)
-- [Graphical User Interface (GUI) Creation]()
+- [Graphical User Interface (GUI) Creation](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-ssh-keys-for-communication-between-pi-and-main-device-optional)
 - [Configuring SSH Keys](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-ssh-keys)
 - [Configuring Python/Bash Files](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-pythonbash-files)
 
@@ -88,18 +88,22 @@ cd LCD-show/
 ## Graphical User Interface (GUI) Creation 
 Now, we will follow steps to create a functional user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
 
-
-### Downloading PyQt5 
-Then this:
-https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
-
-Now, we will upgrade python setuptools and make sure pip recognizes pyqt5. 
+### Downloading PyQt5
+To download PyQt5, we will use pip3:
 ```
 pip3 install --upgrade setuptools
 pip3 install pyqt5
 ```
 
+Then follow this:
+https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
+On your development device, open up QtCreator. 
+
+
+
+
+### GUI Autoboot
 
 To boot the GUI automatically when the Pi starts, we'll have to exable X Windows. note: need to fix this part - Running on Startup: https://ozzmaker.com/enable-x-windows-on-piscreen/
 
@@ -111,16 +115,38 @@ and add this below bottom line:
 sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh
 @/usr/bin/python3 /home/pi/pigui/init.py
 ```
-then exit and type:
+Then exit and type:
 `sudo reboot`
 
 Now, gui should boot on startup. 
 
-# Note: touchscreen settings worked this time around. 
-not sure how to configure this to stay.
-
 #Tested adding '@' before "sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh" in "/etc/xdg/lxsession/LXDE-pi/autostart".
 This might have fixed the issue. Rebooting again to see if calibration changes.
+
+
+-----
+
+## Configuring Python/Bash Files
+
+create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
+This is what I used:
+MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/hdmi.sh
+
+
+currently, on raspberry pi the hdmi.sh bash script is reponsbile for ssh'ing into the Mac. It then executes a locally held (on the mac) bash script titled redirect.sh
+
+Name changes: 
+hdmi.sh --> btn1.sh
+redirect.sh --> btn1redirect.sh
+
+
+an issue i was running into was that i forgot to change the file destinations in init.py to be bash scripts hosted on the pi. Once I changed this, btn1.sh worked upon hitting button 1 in the gui.After you do this, you'll have to be comfortable testing on the pi itself, as you will be unable to run the gui on your pc from >>python3 init.py
+
+any time a .sh file says 'file not found', add this to the beginning of the file:
+`export PATH=/bin:/usr/bin:/usr/local/bin`
+
+
+
 
 
 
@@ -193,7 +219,7 @@ subprocess.call"hdmi.sh")
 
 
 I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
-#This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
+This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
 
 to run a bash file on your computer, you'll need to give it privileges:
 `chmod +x script-name-here.sh`
@@ -211,27 +237,6 @@ make sure to change in the directory before settting permissions with chmod +x:
 This also may be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
 
 Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the Pi.
-
-## Configuring Python/Bash Files
-
-create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
-This is what I used:
-MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/hdmi.sh
-
-
-currently, on raspberry pi the hdmi.sh bash script is reponsbile for ssh'ing into the Mac. It then executes a locally held (on the mac) bash script titled redirect.sh
-
-Name changes: 
-hdmi.sh --> btn1.sh
-redirect.sh --> btn1redirect.sh
-
-
-an issue i was running into was that i forgot to change the file destinations in init.py to be bash scripts hosted on the pi. Once I changed this, btn1.sh worked upon hitting button 1 in the gui.After you do this, you'll have to be comfortable testing on the pi itself, as you will be unable to run the gui on your pc from >>python3 init.py
-
-any time a .sh file says 'file not found', add this to the beginning of the file:
-`export PATH=/bin:/usr/bin:/usr/local/bin`
-
-
 
 
 ------
