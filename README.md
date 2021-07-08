@@ -14,12 +14,11 @@ Requirements:
 - Terminal/Command Line Interface Access
 
 Table of Contents:
-- Operating System and Configuration
-- Touchscreen Configuration
-- Graphical User Interface (GUI) Creation
-- Configuring SSH Keys
-- Configuring Python/Bash Files
-
+- [Operating System and Configuration]()
+- [Touchscreen Configuration]()
+- [Graphical User Interface (GUI) Creation]()
+- [Configuring SSH Keys]()
+- [Configuring Python/Bash Files]()
 
 
 
