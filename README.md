@@ -166,11 +166,7 @@ end if
 EOD
 ```
 
-This architecture is followed for each command and can be replicated to include new functions. 
-
-
-
-
+This architecture is followed for each command and can be replicated to include new functions. Instead of Applescript being invoked in final file, you can also use Python, as some other examples in pigui do. For the testing phase, it is recommended to test the GUI using 'print' functions, then incorporate `subprocess.call("/home/pi/pigui/scripts/bash/file.sh")` and the aforementioned code. 
 
 
 
@@ -218,56 +214,6 @@ It was indicative of a permissions issue on my Mac for the authorized keys folde
 
 Once I did this, the above command worked, trasnferring the ssh key from the pi to the mac, allowing password-less login to my computer from the pi. 
 
-
-
-
-From here, we have to figure out how to send bash commands to your main device (computer) from the functioning gui embedded in the python script. 
-now: writing bash script to ssh when a button is pressed
-https://stackoverflow.com/questions/13745648/running-bash-script-from-within-python/13745968
-
-
-
-
-
-
-
-Now we need to tell the python script controlling the gui to call the bash script when the button of choice is pressed. For this we'll use subprocess:
-
-Example: 
-```
-import subprocess
-print "start"
-subprocess.call("sleep.sh")
-print "end"
-```
-
-
-Code I used: 
-```
-import subprocess
-subprocess.call"hdmi.sh")
-```
-
-
-I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
-This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
-
-to run a bash file on your computer, you'll need to give it privileges:
-`chmod +x script-name-here.sh`
-
-so far:
-```
-chmod +x hdmi.sh
-chmod +x redirect.sh
-chmod +x btn1.sh`
-```
-
-make sure to change in the directory before settting permissions with chmod +x:
-`cd /github/pigui`
-
-This also may be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
-
-Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the Pi.
 
 
 ------
