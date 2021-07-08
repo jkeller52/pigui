@@ -81,6 +81,10 @@ cd LCD-show/
 ```
 
 
+### Touchscreen Calibration
+
+
+
 
 ## Graphical User Interface (GUI) Creation 
 Now, we will follow steps to create a functional user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
