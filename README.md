@@ -21,26 +21,23 @@ Requirements:
 
 # Tutorial
 
-This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow this tutorial: https://www.raspberrypi.org/documentation/installation/installing-images/
+## Operating System and Configuration
+This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow [this tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
 
-##Enabling SSH on the Pi
-If you have a fresh install of Raspbian, you'll need to follow this documentation to enable SSH so that we can connect to the Pi from our computer. This makes development easier.
-https://www.raspberrypi.org/documentation/remote-access/ssh/
+### Enabling SSH on the Pi
+If you have a fresh install of Raspbian, you'll need to follow [this documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/) to enable SSH so that we can connect to the Pi from our computer. This makes development easier.
 
 
-
-## Connecting to the Raspberry Pi via SSH
-### Using Windows 10 https://www.raspberrypi.org/documentation/remote-access/ssh/windows10.md
-
-### Using MacOS (or Linux) https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
-
-
+### Connecting to the Raspberry Pi via SSH
+Below are links to the official Raspberry Pi documentation to connect via SSH.
+[Using Windows 10](https://www.raspberrypi.org/documentation/remote-access/ssh/windows10.md)
+[Using MacOS (or Linux)](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md)
 
 
 ## Configuring the Touchscreen
-Follow this: 
-https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image
+For the purposes of this tutorial, Waveshare's 3.5inch Raspberry Pi LCD (B) was used. Your touchscreen documentation may differ.
+[Official Waveshare Documentation](https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(B)#Image)
 
 Open up Terminal application on your Pi. From there:
 ```
@@ -55,7 +52,7 @@ chmod +x LCD35B-show-V2
  ```
 
 
-The touch function will work after restart. You can set the screen orientation based on how you plan to use your Pi. 
+The touch function will work after the pi restarts. You can set the screen orientation based on how you plan to use your Pi. 
 
 0 degree rotation
 ```
@@ -84,11 +81,11 @@ cd LCD-show/
 
 
 
-# Graphical User Interface (GUI) Creation 
+## Graphical User Interface (GUI) Creation 
 Now, we will follow steps to create a functional user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
 
 
-##Downloading PyQt5 
+### Downloading PyQt5 
 Then this:
 https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
@@ -98,27 +95,22 @@ pip3 install --upgrade setuptools
 pip3 install pyqt5
 ```
 
-# No issues with calibration until this next step. Seems that X-input calibrator is problematic.
-Running on Startup:
-	https://ozzmaker.com/enable-x-windows-on-piscreen/
-  
-  
-  
-  
+
+
+To boot the GUI automatically when the Pi starts, we'll have to exable X Windows. note: need to fix this part - Running on Startup: https://ozzmaker.com/enable-x-windows-on-piscreen/
+
+Run:
 `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
   
-  
-  
-add this below bottom line:
-`sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh
- 
-@/usr/bin/python3 /home/pi/pigui/init.py`
-
-
-then type:
+and add this below bottom line:
+```
+sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh
+@/usr/bin/python3 /home/pi/pigui/init.py
+```
+then exit and type:
 `sudo reboot`
 
-Now, gui should autoboot. 
+Now, gui should boot on startup. 
 
 # Note: touchscreen settings worked this time around. 
 not sure how to configure this to stay.
@@ -126,20 +118,24 @@ not sure how to configure this to stay.
 #Tested adding '@' before "sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh" in "/etc/xdg/lxsession/LXDE-pi/autostart".
 This might have fixed the issue. Rebooting again to see if calibration changes.
 
-# Configuring SSH keys for communication between Pi and main device (Optional)
 
-to enable ssh from the pi to the computer so we can skip being prompted for a password (allows us to automate some gui functions being performed better):
+
+
+## Configuring SSH keys for communication between Pi and main device (Optional)
+In order to seamlessly automate GUI functions, we will need to configure SSH keys so that the Pi can access and execute bash scripts on our primary device.
+
+to enable ssh from the pi to the computer:
 `pi@raspberrypi: ssh-keygen -t rsa`
 press enter twice to leave password blank
 
-now, you need to copy this key to your main device. I used a Mac OS X device, but ran into several permissions issues on the pi and mac. 
+now, you need to copy this key to your main device. I used a Mac OSX device, but ran into several permissions issues on the pi and mac. 
 To avoid this, you'll need to change some permissions settings.
 
-On both the pi and other device:
+On both the Pi and other device:
 `chmod 0700 ~/.ssh`
 
 
-on the mac osx:
+On the Mac OSX:
 ```
 sudo chown jacobkeller .ssh
 sudo chown jacobkeller .ssh/authorized_keys
@@ -185,8 +181,6 @@ print "end"
 ```
 
 
-
-
 Code I used: 
 ```
 import subprocess
@@ -194,8 +188,7 @@ subprocess.call"hdmi.sh")
 ```
 
 
-
-## I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
+I'm now thinking that using ssh to execute bash or python files stored on the computer is the best way to do this. When a gui button is pressed, it calls the python file init.py; init.py knows when buttons are being pressed, and executes the file stored on the mac 
 #This simplifies the stress placed on the ssh connection by storing programs locally to be called upon when needed and excecute in the background.
 
 to run a bash file on your computer, you'll need to give it privileges:
@@ -213,23 +206,13 @@ make sure to change in the directory before settting permissions with chmod +x:
 
 This also may be required when testing/using bash scripts on the pi. use this any time you encounter a "permission denied" error during this stage.
 
-Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the pi.
+Before moving on, test your bash scripts on your main device. Once you've established their functionality, we should attempt to remotely run the bash script from the Pi.
+
+## Setting up Scripts
 
 create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
 This is what I used:
-MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/ddcctl.sh   #should probably change this to hdmi.sh in future for clarity
-
-
-
-
-
-
-Ideas for how the bash commands will work
-
-
-hdmi.sh == hosted on mac
-dp.sh == hosted on mac, called upon to execute by pi
-
+MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/hdmi.sh
 
 
 currently, on raspberry pi the hdmi.sh bash script is reponsbile for ssh'ing into the Mac. It then executes a locally held (on the mac) bash script titled redirect.sh
@@ -244,13 +227,6 @@ an issue i was running into was that i forgot to change the file destinations in
 any time a .sh file says 'file not found', add this to the beginning of the file:
 `export PATH=/bin:/usr/bin:/usr/local/bin`
 
-
-
-
-New features added: smart lights control
-
-new problem: filenotfound errors popping up... then once im past them it wont let me use tinytuya module...
-Think i forgot to import tinytuya into init.py
 
 
 
