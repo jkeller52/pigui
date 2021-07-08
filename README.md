@@ -125,20 +125,31 @@ This might have fixed the issue. Rebooting again to see if calibration changes.
 
 ## Configuring Python/Bash Files
 
-create a bash script on your main device. open it using the direct path to test it works. If you are unfamiliar with the direct path, on Mac OS X you can locate the file in finder, and click and drag its icon into terminal, which leaves you with the full path. 
-This is what I used:
-MBP:~ jacobkeller$ /Users/jacobkeller/Documents/GitHub/pigui/hdmi.sh
+The architecture supporting the application will work as follows:
+- The Python GUI recognizes when buttons are pressed
+- The init.py file underlying the GUI includes functions run to bash (.sh) scripts on the pi for each button push
+- The bash scripts on the pi include code which triggers an ssh connection into the development device/computer using ssh keys and executes a Python file according to which button was pressed
+
+The Python file executed on the main device will trigger the action desired, bypassing limitations of the Raspberry Pi and using it as a simple command-and-control system to automate tasks that are ran through your main device. On my Mac OSX device, this also allowed me to use AppleScript commands to interact with my devices. 
 
 
-currently, on raspberry pi the hdmi.sh bash script is reponsbile for ssh'ing into the Mac. It then executes a locally held (on the mac) bash script titled redirect.sh
 
-Name changes: 
-hdmi.sh --> btn1.sh
-redirect.sh --> btn1redirect.sh
+Example Scripts:
 
 
-an issue i was running into was that i forgot to change the file destinations in init.py to be bash scripts hosted on the pi. Once I changed this, btn1.sh worked upon hitting button 1 in the gui.After you do this, you'll have to be comfortable testing on the pi itself, as you will be unable to run the gui on your pc from >>python3 init.py
+Mute.sh
+```
+#!/bin/bash
+export PATH=/bin:/usr/bin:/usr/local/bin
+ssh -T jacobkeller@localhost '/Users/jacobkeller/Documents/GitHub/pigui/MuteBtn.sh'
+```
 
+
+
+
+
+
+Troubleshooting:
 any time a .sh file says 'file not found', add this to the beginning of the file:
 `export PATH=/bin:/usr/bin:/usr/local/bin`
 
