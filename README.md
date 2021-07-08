@@ -139,7 +139,7 @@ Example Scripts:
 
 For example, pressing the "Mute" button invokes the code `subprocess.call("/home/pi/pigui/scripts/bash/Mute.sh")`, calling:
 
-Mute.sh
+>Mute.sh
 ```
 #!/bin/bash
 export PATH=/bin:/usr/bin:/usr/local/bin
@@ -147,10 +147,9 @@ ssh -T jacobkeller@localhost '/Users/jacobkeller/Documents/GitHub/pigui/MuteBtn.
 ```
 Mute.sh ssh's into the main device, then runs MuteBtn.sh, an AppleScripts command to mute volume on Mac OSX:
 
-MuteBtn.sh
+>MuteBtn.sh
 ```
 #!/bin/bash
-
 #Applescript - won't work for Windows 10
 #runs AppleScript to play/pause music
 osascript <<EOD
@@ -162,9 +161,7 @@ if (MyList contains "Spotify") is true then
 		set volcheck to get sound volume
 		set volcheck to volcheck - 30
 		set sound volume to volcheck
-		
 	end tell
-	
 end if
 EOD
 ```
