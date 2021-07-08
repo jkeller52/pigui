@@ -18,7 +18,7 @@ Table of Contents:
 - [Touchscreen Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#touchscreen-configuration)
 - [Graphical User Interface (GUI) Creation]()
 - [Configuring SSH Keys](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-ssh-keys)
-- [Configuring Python/Bash Files]()
+- [Configuring Python/Bash Files](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-pythonbash-files)
 
 
 
