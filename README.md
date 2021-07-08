@@ -13,7 +13,7 @@ Requirements:
 - Python 3
 - Terminal/Command Line Interface Access
 
-Table of Contents:
+ # Table of Contents:
 - [Operating System and Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#operating-system-and-configuration)
 - [Touchscreen Configuration](https://github.com/jkeller52/pigui/blob/main/README.md#touchscreen-configuration)
 - [Graphical User Interface (GUI) Creation](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-ssh-keys-for-communication-between-pi-and-main-device-optional)
@@ -21,9 +21,6 @@ Table of Contents:
 - [Configuring Python/Bash Files](https://github.com/jkeller52/pigui/blob/main/README.md#configuring-pythonbash-files)
 
 
-
-
-# Tutorial
 
 ## Operating System and Configuration
 This tutorial will asume that you are beginning with Raspian, the standard Raspberry Pi OS, installed. If you don't have Raspian installed or don't know what that means, follow [this tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/)
