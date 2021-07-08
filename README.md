@@ -137,24 +137,50 @@ The Python file executed on the main device will trigger the action desired, byp
 Example Scripts:
 
 
+For example, pressing the "Mute" button invokes the code `subprocess.call("/home/pi/pigui/scripts/bash/Mute.sh")`, calling:
+
 Mute.sh
 ```
 #!/bin/bash
 export PATH=/bin:/usr/bin:/usr/local/bin
 ssh -T jacobkeller@localhost '/Users/jacobkeller/Documents/GitHub/pigui/MuteBtn.sh'
 ```
+Mute.sh ssh's into the main device, then runs MuteBtn.sh, an AppleScripts command to mute volume on Mac OSX:
+
+MuteBtn.sh
+```
+#!/bin/bash
+
+#Applescript - won't work for Windows 10
+#runs AppleScript to play/pause music
+osascript <<EOD
+tell application "System Events"
+	set MyList to (name of every process)
+end tell
+if (MyList contains "Spotify") is true then
+	tell application "Spotify"
+		set volcheck to get sound volume
+		set volcheck to volcheck - 30
+		set sound volume to volcheck
+		
+	end tell
+	
+end if
+EOD
+```
+
+This architecture is followed for each command and can be replicated to include new functions. 
 
 
 
 
 
 
-Troubleshooting:
+
+#### Troubleshooting:
 any time a .sh file says 'file not found', add this to the beginning of the file:
 `export PATH=/bin:/usr/bin:/usr/local/bin`
-
-
-
+If you experience permissions errors when running bash files, be sure to cd into the /pigui/scripts/bash directory and run `sudo chmod +x filename.sh`, then try again. 
 
 
 
