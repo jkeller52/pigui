@@ -55,31 +55,29 @@ chmod +x LCD35B-show-V2
 
 The touch function will work after the pi restarts. You can set the screen orientation based on how you plan to use your Pi. 
 
-0 degree rotation
-```
-cd LCD-show
-./LCD35B-show-V2 0
-```
+>0 degree rotation
+ ```
+ cd LCD-show
+ ./LCD35B-show-V2 0
+ ```
 
-90 degree rotation
-```
-cd LCD-show/
-./LCD35B-show-V2 90
-```
+>90 degree rotation
+ ```
+ cd LCD-show/
+ ./LCD35B-show-V2 90
+ ```
 
-180 degree rotation
-```
-cd LCD-show/
-./LCD35B-show-V2 180
-```
+>180 degree rotation
+ ```
+ cd LCD-show/
+ ./LCD35B-show-V2 180
+ ```
 
-270 degree rotation
-
-```
-cd LCD-show/
-./LCD35B-show-V2 270
-```
-
+>270 degree rotation
+ ```
+ cd LCD-show/
+ ./LCD35B-show-V2 270
+ ```
 
 ### Touchscreen Calibration
 
