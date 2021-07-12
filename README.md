@@ -51,41 +51,27 @@ Then run:
 chmod +x LCD35B-show-V2
 ./LCD35B-show-V2 
  ```
+The touch function should work after the pi restarts. You can set the screen orientation based on how you plan to use your Pi. From within the LCD-show directory:
 
+>0 degree rotation: `./LCD35B-show-V2 0`
 
-The touch function will work after the pi restarts. You can set the screen orientation based on how you plan to use your Pi. 
+>90 degree rotation `./LCD35B-show-V2 90`
 
->0 degree rotation
- ```
- cd LCD-show
- ./LCD35B-show-V2 0
- ```
+>180 degree rotation `./LCD35B-show-V2 180`
 
->90 degree rotation
- ```
- cd LCD-show/
- ./LCD35B-show-V2 90
- ```
+>270 degree rotation `./LCD35B-show-V2 270`
 
->180 degree rotation
- ```
- cd LCD-show/
- ./LCD35B-show-V2 180
- ```
-
->270 degree rotation
- ```
- cd LCD-show/
- ./LCD35B-show-V2 270
- ```
 
 ### Touchscreen Calibration
+Run `sudo apt-get install xinput-calibrator` to install the calibration software.
 
+- Click the "Menu" button on the taskbar, choose "Preference" -> "Calibrate Touchscreen".
+- Finish the touch calibration following the prompts. Rebooting may be required for calibration to take effect.
 
 
 
 ## Graphical User Interface (GUI) Creation 
-Now, we will follow steps to create a functional user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
+Now, we will follow steps to create a user interface for our Pi. We will use the software PyQt, an adaptation of Qt that includes Python boilerplate code and an interactive prototyping interface.
 
 ### Downloading PyQt5
 To download PyQt5, we will use pip3:
@@ -94,17 +80,16 @@ pip3 install --upgrade setuptools
 pip3 install pyqt5
 ```
 
-Then follow this:
-https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
-
 On your development device, open up QtCreator. 
 
+Then follow this guide:
+https://www.baldengineer.com/raspberry-pi-gui-tutorial.html
 
 
 
 ### GUI Autoboot
 
-To boot the GUI automatically when the Pi starts, we'll have to exable X Windows. note: need to fix this part - Running on Startup: https://ozzmaker.com/enable-x-windows-on-piscreen/
+To boot the GUI automatically when the Pi starts, we'll have to exable X Windows. note: need to fix this part - Running on Startup: https://ozzmaker.com/enable-x-windows-on-piscreen/ note: trying this from scratch broke my install configuration. 
 
 Run:
 `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
@@ -119,10 +104,6 @@ Then exit and type:
 
 Now, gui should boot on startup. 
 
-#Tested adding '@' before "sudo /bin/sh /etc/X11/Xsession.d/xinput_calibrator_pointercal.sh" in "/etc/xdg/lxsession/LXDE-pi/autostart".
-This might have fixed the issue. Rebooting again to see if calibration changes.
-
-
 -----
 
 ## Configuring Python/Bash Files
@@ -132,7 +113,7 @@ The architecture supporting the application will work as follows:
 - The init.py file underlying the GUI includes functions run to bash (.sh) scripts on the pi for each button push
 - The bash scripts on the pi include code which triggers an ssh connection into the development device/computer using ssh keys and executes a different bash file according to which button was pressed. This bash file runs an associated Python script to achieve the desired outcome of the button press.
 
-The Python file executed on the main device will trigger the action desired, bypassing limitations of the Raspberry Pi and using it as a simple command-and-control system to automate tasks that are ran through your main device. On my Mac OSX device, this also allowed me to use AppleScript commands to interact with my devices. 
+The Python file executed on the main device will trigger the action desired, using the Raspberry Pi as a simple command-and-control system to automate tasks that are ran through your main device. On my Mac OSX device, this also allowed me to use AppleScript commands to interact with my devices. 
 
 
 
